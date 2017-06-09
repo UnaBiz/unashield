@@ -14,11 +14,11 @@ UnaShield is an Arduino Shield with a SIGFOX transceiver module that is compatib
 There are 2 versions of the UnaShield:
 
 * **UnaShield V2S:** Based on Sigfox module by Wisol.  Includes onboard sensors for temperature, humidity, air pressure, accelerometer and two ports for connecting Grove sensors.<br>
-  **[UnaShield V2S Specifications](https://github.com/UnaBiz/media/blob/master/unabiz-arduino/About%20the%20UnaShield_V2S_20170205.pdf)**<br>
+  **[UnaShield V2S Specifications](https://storage.googleapis.com/unabiz-media/unabiz-arduino/About%20the%20UnaShield_V2S_20170205.pdf)**<br>
   **[Usable pins for UnaShield V2S](https://github.com/UnaBiz/unabiz-arduino/wiki/Usable-pins-for-UnaShield-V2S)**<br>
 
 * **UnaShield V1:** Based on Sigfox module by Radiocrafts.<br>
-  **[UnaShield V1 Specifications](https://github.com/UnaBiz/media/blob/master/unabiz-arduino/About%20the%20UnaShield_V1A_20161222.pdf)**
+  **[UnaShield V1 Specifications](https://storage.googleapis.com/unabiz-media/unabiz-arduino/About%20the%20UnaShield_V1A_20161222.pdf)**
 
 The UnaBiz team has built an Arduino library for the UnaShield, the source code may be found here: https://github.com/UnaBiz/unabiz-arduino
 
@@ -32,7 +32,7 @@ To order the UnaShield, please contact [UnaBiz](http://www.unabiz.com):
 Ms Kimberley Thong<br>
 Business Development Manager<br>
 kimberley.thong@unabiz.com<br>
-[_(Getting to UnaBiz for self-collection orders)_](https://github.com/UnaBiz/media/blob/master/unabiz-arduino/GettingToUnaBizSingapore.pdf)
+[_(Getting to UnaBiz for self-collection orders)_](https://storage.googleapis.com/unabiz-media/unabiz-arduino/GettingToUnaBizSingapore.pdf)
 
 **Taiwan and Rest of the World**<br>
 Mr Nicolas Baele<br>
@@ -41,7 +41,7 @@ nicolas.baele@unabiz.com
 
 The UnaShield is covered by a 3-month warranty, one-for-one exchange. Proof of purchase must be produced upon exchange.
 
-<kbd><img src="https://github.com/UnaBiz/media/blob/master/unabiz-arduino/unashield.jpg" width="500"></kbd><br>
+<kbd><img src="https://storage.googleapis.com/unabiz-media/unabiz-arduino/unashield.jpg" width="500"></kbd><br>
 
 *UnaShield V1*
 
@@ -61,7 +61,7 @@ To install the `unabiz-arduino` library for sending SIGFOX messages:
 
 1. Click **Clone Or Download** then **Download ZIP**
 
-   <kbd><img src="https://github.com/UnaBiz/media/blob/master/unabiz-arduino/github-download.png" width="500"></kbd>
+   <kbd><img src="https://storage.googleapis.com/unabiz-media/unabiz-arduino/github-download.png" width="500"></kbd>
 
 1. Launch the Arduino integrated development environment. Click **Sketch** → **Include Library** → **Add .ZIP Library**
 
@@ -188,7 +188,7 @@ https://github.com/UnaBiz/sigfox-gcloud/blob/master/decodeStructuredMessage/stru
 
 At UnaBiz we call `decodeMessage` to decode the structured messages when tracing messages via Slack:
 
-<img src="https://github.com/UnaBiz/media/blob/master/unabiz-arduino/decode-message-slack.jpg" height="300">
+<img src="https://storage.googleapis.com/unabiz-media/unabiz-arduino/decode-message-slack.jpg" height="300">
 
 The Structured Message Format is described below.
 
@@ -198,7 +198,7 @@ The **Sigfox Backend Portal** enables us to view the messages received by Sigfox
 
 Log on to the Sigfox Backend Portal at **http://backend.sigfox.com/**
 
-<kbd><img src="https://github.com/UnaBiz/media/blob/master/unabiz-arduino/sigfox-messages.png" width="500"></kbd>
+<kbd><img src="https://storage.googleapis.com/unabiz-media/unabiz-arduino/sigfox-messages.png" width="500"></kbd>
 
 ## Processing messages sent by the UnaShield
 
@@ -254,7 +254,7 @@ The Device ID and PAC will be used to activate the UnaShield with the SIGFOX Ope
 
 ## Support for LightBlue Bean+
 
-<img src="https://github.com/UnaBiz/media/blob/master/unabiz-arduino/unatumbler.jpg" width="600">
+<img src="https://storage.googleapis.com/unabiz-media/unabiz-arduino/unatumbler.jpg" width="600">
 
 The **[LightBlue Bean+ by Punch Through](https://punchthrough.com/bean)** is a tiny Arduino-compatible board with built-in:
 
