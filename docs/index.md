@@ -1,5 +1,7 @@
 ## About UnaShield
 
+![UnaShield V2S](https://github.com/UnaBiz/media/blob/master/unabiz-arduino/unashieldv2s-full.jpg)
+
 <img src="https://github.com/UnaBiz/media/blob/master/unabiz-arduino/unashieldv2s-full.jpg" width="500" border="5">
 <br>
 
