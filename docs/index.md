@@ -1,6 +1,5 @@
 ---
 title: UnaShield User Guide
-layout: post
 ---
 
 ## About UnaShield
