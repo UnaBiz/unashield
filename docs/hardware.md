@@ -22,7 +22,7 @@ UnaShield is an Arduino Shield with a SIGFOX transceiver module that is compatib
 ‧ RCZ4：Singapore, Taiwan, Australia, New Zealand, Hong Kong, South America …
 
 | Features |  | V1(A) (20161128) | V2 (20170325) | V2S (20170107) | V2S (20170325) |
-| ---------- | ---------- | ---------- | ---------- | ---------- | ---------- |
+| :---------- | :---------- | :----------: | :----------: | :----------: | :----------: |
 | SIGFOX Module | Radiocrafts RC1692HP-SIG | V |  |  |  |
 |  | WISOL WSSFM10R |  | V | V | V |
 |  | SIGFOX RCZ | 2 / 4 | 1 / 2 / 3 / 4 | 1 / 2 / 3 / 4 | 1 / 2 / 3 / 4 |
