@@ -1,9 +1,6 @@
 ## About UnaShield
 
-<img src="https://storage.googleapis.com/unabiz-media/sigfox-gcloud/sigfox-gcloud-arch.svg" width="500" border="5">
-<br>
-
-[https://storage.googleapis.com/unabiz-media/sigfox-gcloud/sigfox-gcloud-arch.svg](https://storage.googleapis.com/unabiz-media/sigfox-gcloud/sigfox-gcloud-arch.svg)
+<img src="https://storage.googleapis.com/unabiz-media/unabiz-arduino/unashieldv2s-full.jpg" width="500" border="5">
 <br>
 *UnaShield V2S*
 
