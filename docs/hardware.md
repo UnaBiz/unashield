@@ -21,22 +21,22 @@ UnaShield is an Arduino Shield with a SIGFOX transceiver module that is compatib
 
 ‧ RCZ4：Singapore, Taiwan, Australia, New Zealand, Hong Kong, South America …
 
-| **Features** | **** | **V1(A) (20161128)** | **V2 (20170325)** | **V2S (20170107)** | **V2S (20170325)** |
-| :---------- | :---------- | :----------: | :----------: | :----------: | :----------: |
-| SIGFOX Module | Radiocrafts RC1692HP-SIG | V |  |  |  |
-|  | WISOL WSSFM10R |  | V | V | V |
-|  | SIGFOX RCZ | 2 / 4 | 1 / 2 / 3 / 4 | 1 / 2 / 3 / 4 | 1 / 2 / 3 / 4 |
-| Sensor | Accelerometer (MMA8451Q) |  |  | V | V |
-|  | Temperature Sensor (BME280) |  |  | V | V |
-|  | Humidity Sensor (BME280) |  |  | V | V |
-|  | Pressure Sensor (BME280) |  |  | V | V |
-|  | Push Button |  | V | V | V |
-| Peripheral Connection | Digital Grove (I2C) |  | V | V | V |
-|  | Analog Grove |  | V | V | V |
-| LED | Power Indication | V | V | V | V |
-|  | General Indication |  | V | V | V |
-|  | Module Status Monitor |  | V | V | V |
-| Antenna | Matching Circuit |  | V |  | V |
+| **Features** |  | **V1(A) (20161128)** | **V2 (20170325)** | **V2S (20170107)** | **V2S (20170325)** |
+| **:----------** | **:----------** | **:----------:** | **:----------:** | **:----------:** | **:----------:** |
+| **SIGFOX Module** | **Radiocrafts RC1692HP-SIG** | **V** |  |  |  |
+|  | **WISOL WSSFM10R** |  | **V** | **V** | **V** |
+|  | **SIGFOX RCZ** | **2 / 4** | **1 / 2 / 3 / 4** | **1 / 2 / 3 / 4** | **1 / 2 / 3 / 4** |
+| **Sensor** | **Accelerometer (MMA8451Q)** |  |  | **V** | **V** |
+|  | **Temperature Sensor (BME280)** |  |  | **V** | **V** |
+|  | **Humidity Sensor (BME280)** |  |  | **V** | **V** |
+|  | **Pressure Sensor (BME280)** |  |  | **V** | **V** |
+|  | **Push Button** |  | **V** | **V** | **V** |
+| **Peripheral Connection** | **Digital Grove (I2C)** |  | **V** | **V** | **V** |
+|  | **Analog Grove** |  | **V** | **V** | **V** |
+| **LED** | **Power Indication** | **V** | **V** | **V** | **V** |
+|  | **General Indication** |  | **V** | **V** | **V** |
+|  | **Module Status Monitor** |  | **V** | **V** | **V** |
+| **Antenna** | **Matching Circuit** |  | **V** |  | **V** |
  
 ##  Top-View of UnaShields
 
