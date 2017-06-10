@@ -183,16 +183,23 @@ Depending on the sensor connected through the Grove Connector #1, the I2C addres
 (01) Can UnaShield use on all Arduino platforms?
 
 UnaShield is well-tested on Arduino UNO R3; however, it’s not compatible with all the variants of Arduino boards, because the pin definition difference. Here are two series Arduino platforms suffered from the incompatibility
-‧Mega & Mega2560
-Only the following pins can be used for RX in Mega & Mega2560：
+
+- ‧Mega & Mega2560
+
+Only the following pins can be used for RX in Mega & Mega2560：<br>
 10, 11, 12, 13, 50, 51, 52, 53, 62, 63, 64, 65, 66, 67, 68, 69
-‧Leonardo & Micro
-Only the following pins can be used for RX in Leonardo & Micro：
+
+‧ Leonardo & Micro
+
+Only the following pins can be used for RX in Leonardo & Micro：<br>
 8, 9, 10, 11, 14, 15, 16
+
 For the users of these incompatible Arduino platforms, two-step procedure is recommended to fix the incompatibility by switching the UART receiving pin (UART-RX) from the digital PIN5 to another pin with RX function.
-Step1
+
+**Step1**<br />
 Assign the original PIN5 (UART-RX) as an input by the setting marked with color green in the table shown below, even though keep the PIN5 (UART-RX) pin un-connected is fine on Arduino UNO R3.
-Step2
+
+**Step2**<br />
 Connect PIN5 (UART-RX) to one of the pins with receiving function to be the new UART-RX by an external metal wire.
 
 | **DDxn** | **PORTxn** | **PUD (in MCUCR)** | **I/O** | **Pull-Up** | **Comment** |					
