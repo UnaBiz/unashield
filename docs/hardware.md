@@ -146,9 +146,9 @@ UnaShield V2S is equipped with two Grove connectors, a standard 4-pin connector 
 
 The power level of onboard Grove connector is alterable between 3V3 and 5V. Choose the most proper power source to the module/device connected by **J204** configuration.
 
-| Grove-VCC Voltage	| Floating	| 5V	| 3.3V (Default) |
-| ----------------- | -------- | -- | -------------- |
-| J204 Configuration | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image025.png"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image026.png"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image027.png"> |
+| Grove-VCC Voltage	| Floating	| 5V	 | 3.3V (Default) |
+| ----------------- | :------: | :-: | :------------: |
+| J204 Configuration | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image024.png"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image026.png"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image027.png"> |
 
 ### (6) LED Indicator & Manual Switches (UnaShield V2/V2S Only)
 
