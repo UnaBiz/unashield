@@ -1,6 +1,8 @@
 ---
-title: UnaShield User Guide
+title: UnaShield Developer's Guide
 ---
+
+# UnaShield Developer's Guide
 
 ## About UnaShield
 
