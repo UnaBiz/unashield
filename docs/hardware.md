@@ -255,9 +255,11 @@ Both 3V3 and 5V UART signaling levels are acceptable. The UnaShield's level-shif
 
 ### *Can the UART Interface be reused?*
 
-The **Arduino D4, D5** pins are used by the **UART interface** on UnaShield, for communicating with the onboard SIGFOX module. 
+<blockquote>
+ The **Arduino D4, D5** pins are used by the **UART interface** on UnaShield, for communicating with the onboard SIGFOX module. 
 
-UART communications is designed for two endpoints only, so D4, D5 cannot be connected for any other purpose.
+ UART communications is designed for two endpoints only, so D4, D5 cannot be connected for any other purpose.
+</blockquote>
 
 ### *Can the I2C Interface be reused?*
 
