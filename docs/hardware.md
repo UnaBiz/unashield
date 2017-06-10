@@ -66,7 +66,7 @@ Version：V1.0
 
 -----
 
-##  Pin Assignment of UnaShields
+##  Pin Assignment of UnaShield
 
 | **Arduino Pins** | **UnaShield V1A** | **UnaShield V2 / V2S** | **Description** |			
 | :----------: | :----------: | :----------: | :---------- |			
@@ -114,7 +114,7 @@ Version：V1.0
 - The onboard SIGFOX module works with **DC 3V3 power.** All the Arduino pins used by the UnaShield are connected to a **level-shifter** to ensure that the pin voltage is always fixed at 3V3.
 
 ----- 
-##  Feature & Function Description
+##  Feature and Function Description
 
 ### 1. SMA Connector
 
@@ -125,9 +125,10 @@ The **SMA (SubMiniature version A) Connector** is used for connecting the coaxia
 
 UnaShield V1(A) embeds a Radiocrafts SIGFOX module **RC1692HP-SIG,** certified for RCZ2 and RCZ4; UnaShield V2 / V2S uses a WISOL SIGFOX module in the **WSSFM10R Series,** certified for all four RCZs. The SIGFOX modules may be controlled via the **UART interface** with serial terminal commands (similar to the **AT Command Format** used by modems).
 
-**UnaShield V1A：Radiocrafts RC1692HP-SIG, for RCZ2 and 4**
-
-**UnaShield V2 / V2S：WISOL WSSFM10R, for all RCZs: RCZ1, 2, 3 and 4**
+**UnaShield V1A** | **UnaShield V2 / V2S**
+:---------------: | :---------------------:
+Radiocrafts RC1692HP-SIG | WISOL WSSFM10R
+For RCZ2 and 4 | For all RCZs: RCZ1, 2, 3 and 4
 
 -----
 ### 3. Arduino Uno Standard Header
