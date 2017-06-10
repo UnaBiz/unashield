@@ -116,7 +116,7 @@ Version：V1.0
 
 ### 1. SMA Connector
 
-<kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image008.png" width="200" align="left"></kbd>The **SMA (SubMiniature version A) Connector** is used for connecting the coaxial RF antenna. To prevent damage to the onboard SIGFOX module, *always connect the antenna before powering up the UnaShield and before sending any SIGFOX messages.*
+<kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image008.png" width="200" align="right"></kbd>The **SMA (SubMiniature version A) Connector** is used for connecting the coaxial RF antenna. To prevent damage to the onboard SIGFOX module, *always connect the antenna before powering up the UnaShield and before sending any SIGFOX messages.*
 
 -----
 ### 2. SIGFOX Module
