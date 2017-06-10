@@ -18,7 +18,7 @@ Version：V1.0
 ----- 
 ## About the UnaShield
 
-<kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image022.png" width="200" align="right"></kbd><p>UnaShield is an Arduino Shield with a SIGFOX transceiver module that is compatible with Arduino Uno R3 and other Arduino-based development boards. It uses SIGFOX-certified WISOL or Radiocrafts modules to support all RCZs (Radio Configuration Zones).</p>
+<kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image022.png" width="200" align="right"></kbd>UnaShield is an Arduino Shield with a SIGFOX transceiver module that is compatible with Arduino Uno R3 and other Arduino-based development boards. It uses SIGFOX-certified WISOL or Radiocrafts modules to support all RCZs (Radio Configuration Zones).
 
 - **RCZ1:** Europe, Oman, South Africa
 
