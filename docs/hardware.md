@@ -120,6 +120,7 @@ UnaShield is an Arduino Shield with a SIGFOX transceiver module that is compatib
 
 The **SMA (SubMiniature version A) Connector** is used for connecting the coaxial RF antenna. To prevent damage to the onboard SIGFOX module, *always connect the antenna before powering up the UnaShield and before sending any SIGFOX messages.*
 
+-----
 ### 2. SIGFOX Module
 
 UnaShield V1(A) embeds a Radiocrafts SIGFOX module **RC1692HP-SIG,** certified for RCZ2 and RCZ4; UnaShield V2 / V2S uses a WISOL SIGFOX module in the **WSSFM10R Series,** certified for all four RCZs. The SIGFOX modules may be controlled via the **UART interface** with serial terminal commands (similar to the **AT Command Format** used by modems).
@@ -128,6 +129,7 @@ UnaShield V1(A) embeds a Radiocrafts SIGFOX module **RC1692HP-SIG,** certified f
 
 **UnaShield V2 / V2S：WISOL WSSFM10R, for all RCZs: RCZ1, 2, 3 and 4**
 
+-----
 ### 3. Arduino Uno Standard Header
 
 UnaShield has four Arduino standard headers (pin connectors): one 6-pin header, two 8-pin headers, and one 10-pin header. Not all Arduino pins are used by the UnaShield, some Arduino pins are passed through unmodified by UnaShield.
@@ -138,12 +140,14 @@ For the details of each Arduino Uno pin assignment and definition, please check 
 
 <a href="https://www.arduino.cc/en/Main/ArduinoBoardUno">https://www.arduino.cc/en/Main/ArduinoBoardUno</a>
 
+-----
 ### 4. Push Button (UnaShield V2 / V2S only)
 
 A **Push Button** (tact switch) is connected to the **D6 Digital Input** pin of the Arduino Uno.
 
 The button may be programmed in Arduino sketches to trigger certain functions when pressed.
 
+-----
 ### 5. Grove Connector (UnaShield V2 / V2S only)
 
 UnaShield V2S is equipped with **two Grove Connectors,** a standard 4-pin connector for Grove sensors. You may connect sensors or components with Grove interfaces to extend the capabilities of the Arduino device. 
@@ -158,6 +162,7 @@ The onboard Grove connectors support two voltage levels: **3V3 or 5V.** Select t
 | --------------- | :----------: | :-----: | :----------------: |
 | **Jumper J204** | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image024.png" width="100"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image026.png" width="100"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image027.png" width="100"> |
 
+-----
 ### 6. LED Indicator and Manual Switches (UnaShield V2 / V2S only)
 
 **Eight onboard LEDs** are used to show the status of the UnaShield. The LEDs may be disabled through the jumpers **J201, J202 and J203**.
@@ -180,6 +185,7 @@ The onboard Grove connectors support two voltage levels: **3V3 or 5V.** Select t
 | ------------------------- | :----------: | :-------------------: |
 | **Jumper J203**	 | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image029.png" width="100"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image030.png" width="100"> |
 
+-----
 ### 7. I2C Interface (UnaShield V2 / V2S only)
 
 **I2C (Inter-Integrated Circuit)** is a two-wire, bidirectional protocol for connecting multiple sensors and components on the same pair of wires.
@@ -206,9 +212,10 @@ The **UnaShield accelerometer sensor** and **temperature / humidity / pressure s
 
 Grove Connector #1 is also connected to the I2C bus. The sensor or component connected through Grove Connector #1 must use an **I2C address that is distinct** from the above I2C addresses, to avoid address conflict. 
 
+-----
 ## Frequently Asked Questions
 
-### (01) Can the UnaShield be used on all Arduino boards?
+### Can the UnaShield be used on all Arduino boards?
 
 UnaShield has been thoroughly tested on Arduino Uno R3. However it’s not compatible with all variants of Arduino boards, due to the different pin definitions. Here two classes of Arduino boards that are incompatible with the UnaShield due to the pin definitions:
 
@@ -235,7 +242,7 @@ Connect **UnaShield Pin 5 (UART-RX)** to one of the Arduino pins below with UART
 | **1** | **0** | **X** | **OUTPUT** | **NO** | **Output Low** |					
 | **1** | **1** | **X** | **OUTPUT** | **NO** | **Output High** |					
 
-### (02) Can UnaShield work as a breakout board?
+### Can UnaShield work as a breakout board?
 UnaShield can be the breakout board of the onboard SIGFOX module. Only five pins need to connected, so that the SIGFOX module can be controlled by any external MCU (e.g. ARM CPU, Raspberry Pi) or integrated to any existing system.
 
 **Power Pins:** 3V3, 5V, GND
@@ -244,13 +251,13 @@ UnaShield can be the breakout board of the onboard SIGFOX module. Only five pins
 
 Both 3V3 and 5V UART signaling levels are acceptable. The UnaShield's level-shifting circuit regulates the 5V UART signaling to 3V3, which is the nominal power level of the onboard SIGFOX module. 
 
-### (03) Can the UART Interface be reused?
+### Can the UART Interface be reused?
 
 The **D4, D5** pins are used by the **UART interface** on UnaShield, for communicating with the onboard SIGFOX module. 
 
 UART communications is designed for two endpoints only, so D4, D5 cannot be connected for any other purpose.
 
-### (04) Can the I2C Interface be reused?
+### Can the I2C Interface be reused?
 
 The **A4, A5** pins are the I2C interface on UnaShield, connecting to he **UnaShield accelerometer sensor**,
 **temperature / humidity / pressure sensor** and **Grove Connector #1**. 
@@ -260,16 +267,16 @@ Every message transmitted on I2C contains the unique I2C address of the receiver
 
 Any I2C device with a unique and distinguishable address can connect to these two pins simultaneously.
 
-### (05) Can Grove Connector #2 (A2, A3) be reused?
+### Can Grove Connector #2 (A2, A3) be reused?
 
 The **A2, A3** pins are connected to **Grove Connector #2** and to Grove sensor connected to that port.
 If Grove Connector #2 is not connected to any Grove sensor, then A2, A3 can be used for other Analog Input/Output connections.
 
-### (06) Can D8 & D9 be reused?
+### Can Pins D8 & D9 be reused?
 
 The **D8 & D9 pins** control the **User-Programmable LED.** Remove jumper **J203** to disable the LED function, then D8, D9 may be reused for other Digital Input/Output connections. 
 
-### (08) What's the guideline for deciding if a pin is reusable?
+### What's the guideline for deciding if a pin is reusable?
 
 Each pin can only be assigned to one function. The pin may not be reused until the default function of that pin has been deactivated.
 If the same pin is used by two circuits (e.g. UART Interface and Digital Input/Output), 
@@ -277,27 +284,33 @@ the conflict in the electrical signalling will lead to failure of both functions
 
 The only exception is the I2C connection, which supports daisy-chaining of multiple sensors on the same two I2C pins.
 
-### (09) What are the limitations of the Arduino Input/Output pins?
+### What are the limitations of the Arduino Input/Output pins?
 
 UnaShield was designed for the Arduino hardware platform. All the Arduino Input/Output pins derive from the Arduino MCU. Maximal current for each I/O pin is **40mA** on Arduino Uno R3.
 
-### (10) How to activate the UnaShield?
+### How to activate the UnaShield?
 
-Follow the steps here to activate your UnaShield: (https://bit.ly/unashieldact)[https://bit.ly/unashieldact] 
+Follow the steps here to activate your UnaShield: 
+
+<a href="https://bit.ly/unashieldact">https://bit.ly/unashieldact</a>
 
 Each UnaShield activated will enjoy two years of free Sigfox subscription.
 
-### (11) What is the warranty for UnaShield?
+### What is the warranty for UnaShield?
 
 The UnaShield is covered by a 3-month warranty, one-for-one exchange. Proof of purchase must be produced upon exchange. 
 
+-----
+
 ## UnaShield Developer Page
 
-All the Arduino library and sample codes are ready for download at (https://bit.ly/unashield)[https://bit.ly/unashield]
+All Arduino library and sample codes for the UnaShield are ready for download at
+
+<a href="https://bit.ly/unashield">https://bit.ly/unashield</a>
 
 ## Getting the UnaShield
 
-To order the UnaShield, please contact UnaBiz：
+To order the UnaShield, please contact <a href="http://www.unabiz.com">UnaBiz</a>:
 
 ### Singapore 
 
