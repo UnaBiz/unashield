@@ -182,13 +182,14 @@ Step1
 Assign the original PIN5 (UART-RX) as an input by the setting marked with color green in the table shown below, even though keep the PIN5 (UART-RX) pin un-connected is fine on Arduino UNO R3.
 Step2
 Connect PIN5 (UART-RX) to one of the pins with receiving function to be the new UART-RX by an external metal wire.
-DDxn	PORTxn	PUD
-(in MCUCR)	I/O	Pull-Up	Comment
-0	0	X	INPUT	NO	HI-Z
-0	1	0	INPUT	YES	
-0	1	1	INPUT	NO	HI-Z
-1	0	X	OUTPUT	NO	Output Low
-1	1	X	OUTPUT	NO	Output High
+
+| **DDxn** | **PORTxn** | **PUD (in MCUCR)** | **I/O** | **Pull-Up** | **Comment** |					
+| :----------: | :----------: | :----------: | :----------: | :----------: | :----------: |					
+| **0** | **0** | **X** | **INPUT** | **NO** | **HI-Z** |					
+| **0** | **1** | **0** | **INPUT** | **YES** |  |					
+| **0** | **1** | **1** | **INPUT** | **NO** | **HI-Z** |					
+| **1** | **0** | **X** | **OUTPUT** | **NO** | **Output Low** |					
+| **1** | **1** | **X** | **OUTPUT** | **NO** | **Output High** |					
 
 (02) Can UnaShield work as a breakout board?
 UnaShield can be the breakout board of the onboard SIGFOX module. Only five pin need to connect, so that the SIGFOX module can be controlled by any external MCU or integrated to any existed system.
