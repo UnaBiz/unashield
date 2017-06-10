@@ -148,7 +148,7 @@ The power level of onboard Grove connector is alterable between 3V3 and 5V. Choo
 
 | Grove-VCC Voltage	| Floating	| 5V	 | 3.3V (Default) |
 | ----------------- | :------: | :-: | :------------: |
-| J204 Configuration | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image024.png"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image026.png"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image027.png"> |
+| J204 Configuration | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image024.png" width="100"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image026.png" width="100"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image027.png" width="100"> |
 
 ### (6) LED Indicator & Manual Switches (UnaShield V2/V2S Only)
 
@@ -235,7 +235,11 @@ The D4 & D5 pins are the UART interface on UnaShield, used to communicate with t
 
 ### (04) Can the I2C Interface be reused?
 
-The A4 & A5 pins are the I2C interface on UnaShield, used to communicate with the onboard sensors & the Grove connector #1 as well. I2C interface works in daisy-chain mode, which means each terminal owns a unique address. The message transmitted with the unique address of the receiver, so that only one of the terminals in the daisy-chain can catch and decode the message. Any I2C device with a unique and distinguishable address can connect to these two pins with parallel connection.
+The A4 & A5 pins are the I2C interface on UnaShield, used to communicate with the onboard sensors & the Grove connector #1 as well. 
+
+I2C interface works in daisy-chain mode, which means each terminal owns a unique address. The message transmitted with the unique address of the receiver, so that only one of the terminals in the daisy-chain can catch and decode the message. 
+
+Any I2C device with a unique and distinguishable address can connect to these two pins with parallel connection.
 
 ### (05) Can the Grove Connector #2 Interface (A2 & A3) be reused?
 
@@ -247,7 +251,9 @@ The D8 & D9 pins are assigned to be the user programmable LED control. Remove th
 
 ### (08) What's the guideline for deciding if a pin is reusable?
 
-Any unexpected inputs make the collision and failure. Except the protocol like I2C, which supports daisy-chain connection, each pin can only be assigned to one function. Can’t be reused until the default function has been deactivated.
+If the same pin is used by two circuits (e.g. UART Interface and Digital Input/Output), 
+the conflict in the electrical signalling will lead to failure of both functions.
+Except the protocol like I2C, which supports daisy-chain connection, each pin can only be assigned to one function. Can’t be reused until the default function has been deactivated.
 
 ### (09) Any limitations on the I/O pins?
 
