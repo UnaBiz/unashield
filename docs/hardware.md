@@ -120,7 +120,7 @@ Version：V1.0
 <br><br><br>
 
 ----- 
-##  Feature and Functions
+##  Features and Functions
 
 ### 1. SMA Connector
 
