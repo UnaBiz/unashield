@@ -5,15 +5,15 @@ Version：V1.0
  
 ## Contents
 
-  About the UnaShield	???
+  About the UnaShield
   
-  Top-View of UnaShields	???
+  UnaShield Schematics
   
-  Pin Assignment of UnaShields	???
+  Pin Assignment of UnaShield
   
-  Feature & Function Description	???
+  Feature & Function Description
   
-  Frequently Asked Questions	???
+  Frequently Asked Questions
   
  
 ## About the UnaShield
@@ -47,7 +47,7 @@ UnaShield is an Arduino Shield with a SIGFOX transceiver module that is compatib
 |  | **Module Status Monitor** |  | **✔** | **✔** | **✔** |					
 | **Antenna** | **Matching Circuit** |  | **✔** |  | **✔** |					
 
-##  Top-View of UnaShields
+##  UnaShield Schematics
 
 <kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image012.png" width="500"></kbd><br>
 
