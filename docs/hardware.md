@@ -113,7 +113,6 @@ Version：V1.0
 
 <br><br><br>
 ----- 
-<kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image008.png" width="200" align="right"></kbd>
 ##  Feature & Function Description
 
 ### 1. SMA Connector
@@ -131,6 +130,8 @@ UnaShield V1(A) embeds a Radiocrafts SIGFOX module **RC1692HP-SIG,** certified f
 
 -----
 ### 3. Arduino Uno Standard Header
+
+<kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image008.png" width="200" align="right"></kbd>
 
 UnaShield has four Arduino standard headers (pin connectors): one 6-pin header, two 8-pin headers, and one 10-pin header. Not all Arduino pins are used by the UnaShield, some Arduino pins are passed through unmodified by UnaShield.
 
