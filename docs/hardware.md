@@ -116,7 +116,7 @@ UnaShield is an Arduino Shield with a SIGFOX transceiver module that is compatib
 ----- 
 ##  Feature & Function Description
 
-<kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image008.png" width="300"></kbd>
+<kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image008.png" width="200"></kbd>
 
 ### 1. SMA Connector
 
