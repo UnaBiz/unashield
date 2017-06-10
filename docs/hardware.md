@@ -202,9 +202,9 @@ The **UnaShield accelerometer sensor** and **temperature / humidity / pressure s
 | **LOW**	 | **0x76**	       | **✔**       |
 | **HIGH**	| **0x77**	       |             |
 
-#### Grove Connector #1
+#### **Grove Connector #1**
 
-Grove Connector #1 is also connected to the I2C bus. The sensor connected through Grove Connector #1 must use an **I2C address that is distinct** from the above I2C addresses, to avoid address conflict. 
+Grove Connector #1 is also connected to the I2C bus. The sensor or component connected through Grove Connector #1 must use an **I2C address that is distinct** from the above I2C addresses, to avoid address conflict. 
 
 ## Frequently Asked Questions
 
@@ -212,17 +212,13 @@ Grove Connector #1 is also connected to the I2C bus. The sensor connected throug
 
 UnaShield has been thoroughly tested on Arduino Uno R3. However it’s not compatible with all variants of Arduino boards, due to the different pin definitions. Here two classes of Arduino boards that are incompatible with the UnaShield due to the pin definitions:
 
-#### Arduino Mega / Mega2560
-
-Only the following pins are supported for UART RX in Mega & Mega2560:<br>
+#### Arduino Mega / Mega2560: Only the following pins are supported for UART RX in Mega & Mega2560:<br>
 - **10, 11, 12, 13, 50, 51, 52, 53, 62, 63, 64, 65, 66, 67, 68, 69**
 
-#### Arduino Leonardo / Micro
-
-Only the following pins are supported for UART RX in Leonardo & Micro:<br>
+#### Arduino Leonardo / Micro: Only the following pins are supported for UART RX in Leonardo & Micro:<br>
 - **8, 9, 10, 11, 14, 15, 16**
 
-For the users of these incompatible Arduino platforms, perform the two steps below to switch the **UnaShield's UART Receiving Pin (UART-RX)** from **Arduino D5 Pin** to another Arduino pin with UART RX capability.
+If you are using one of these Arduino boards, perform the two steps below to switch the **UnaShield's UART Receiving Pin (UART-RX)** from **Arduino D5 Pin** to another Arduino pin with UART RX capability.
 
 #### Step 1
 Assign the original **UnaShield Pin 5 (UART-RX)** as an input, by choosing a setting marked **<span style="color: lime">Green</span>** in the table below. 
