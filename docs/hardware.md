@@ -159,7 +159,7 @@ The onboard Grove connectors support two voltage levels: **3V3 or 5V.** Select t
 
 |  	              | **Floating**	| **5V**	 | **3.3V (Default)** |
 | --------------- | :----------: | :-----: | :----------------: |
-| **Jumper J204** | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image024.png" width="100"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image026.png" width="100"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image027.png" width="100"> |
+| **Jumper J204** | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image024.png" width="50"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image026.png" width="50"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image027.png" width="50"> |
 
 -----
 ### 6. LED Indicator and Manual Switches (UnaShield V2 / V2S only)
@@ -242,13 +242,15 @@ Connect **UnaShield Pin 5 (UART-RX)** to one of the Arduino pins below with UART
 | **1** | **1** | **X** | **OUTPUT** | **NO** | **Output High** |					
 
 ### *Can UnaShield work as a breakout board?*
-UnaShield can be the breakout board of the onboard SIGFOX module. Only five pins need to connected, so that the SIGFOX module can be controlled by any external MCU (e.g. ARM CPU, Raspberry Pi) or integrated to any existing system.
+UnaShield can be the breakout board of the onboard SIGFOX module. **Only five pins need to connected,** so that the SIGFOX module can be controlled by any external MCU (e.g. ARM CPU, Raspberry Pi) or integrated to any existing system.
 
-**Power Pins:** 3V3, 5V, GND
+| **Power Pins:** | **UART Interface:** |
+| :-------------: | :-----------------: |
+| - **3V3**       | - **UART-TX (D4)**  |
+| - **5V**        | - **UART-RX (D5)**  |
+| - **GND**       |                     |
 
-**UART Interface:** UART-TX (D4), UART-RX (D5)
-
-Both 3V3 and 5V UART signaling levels are acceptable. The UnaShield's level-shifting circuit regulates the 5V UART signaling to 3V3, which is the nominal power level of the onboard SIGFOX module. 
+Both 3V3 and 5V UART signaling levels are accepted. The UnaShield's level-shifting circuit regulates the 5V UART signaling to 3V3, which is the nominal power level of the onboard SIGFOX module. 
 
 ### *Can the UART Interface be reused?*
 
