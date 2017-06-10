@@ -15,7 +15,7 @@ Version：V1.0
   
   Frequently Asked Questions
   
- 
+----- 
 ## About the UnaShield
 
 <kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image022.png" width="200"></kbd> 
@@ -47,6 +47,7 @@ UnaShield is an Arduino Shield with a SIGFOX transceiver module that is compatib
 |  | **Module Status Monitor** |  | **✔** | **✔** | **✔** |					
 | **Antenna** | **Matching Circuit** |  | **✔** |  | **✔** |					
 
+----- 
 ##  UnaShield Schematics
 
 <kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image012.png" width="500"></kbd><br>
@@ -112,6 +113,7 @@ UnaShield is an Arduino Shield with a SIGFOX transceiver module that is compatib
 
 - The onboard SIGFOX module works with **DC 3V3 power.** All the Arduino pins used by the UnaShield are connected to a **level-shifter** to ensure that the pin voltage is always fixed at 3V3.
 
+----- 
 ##  Feature & Function Description
 
 <kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image008.png" width="300"></kbd>
