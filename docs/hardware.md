@@ -100,7 +100,7 @@ UnaShield is an Arduino Shield with a SIGFOX transceiver module that is compatib
 | **D1** | **NC** | **NC** | **Digital Pin-1** |			
 | **D0** | **NC** | **NC** | **Digital Pin-0** |			
  
-<kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image020.png" width="300"></kbd><br>
+<kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image020.png" width="400"></kbd><br>
 
 * All the pins marked with symbol * are essential for the onboard SIGFOX module. Even though UnaShield is designed on Arduino UNO-R3 platform, it can be integrated to be a standalone SIGFOX module if these essential five pins are properly connected.
 * The onboard SIGFOX module works with DC-3V3 power. All the pins assigned on UnaShield are interfaced with the level-shifter to adjust the voltage to the acceptable voltage level, 3V3.
