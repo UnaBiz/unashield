@@ -112,11 +112,12 @@ Version：V1.0
 - The onboard SIGFOX module works with **DC 3V3 power.** All the Arduino pins used by the UnaShield are connected to a **level-shifter** to ensure that the pin voltage is always fixed at 3V3.
 
 ----- 
+<kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image008.png" width="200" align="right"></kbd>
 ##  Feature & Function Description
 
 ### 1. SMA Connector
 
-<kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image008.png" width="200" align="right"></kbd>The **SMA (SubMiniature version A) Connector** is used for connecting the coaxial RF antenna. To prevent damage to the onboard SIGFOX module, *always connect the antenna before powering up the UnaShield and before sending any SIGFOX messages.*
+The **SMA (SubMiniature version A) Connector** is used for connecting the coaxial RF antenna. To prevent damage to the onboard SIGFOX module, *always connect the antenna before powering up the UnaShield and before sending any SIGFOX messages.*
 
 -----
 ### 2. SIGFOX Module
