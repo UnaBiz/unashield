@@ -238,36 +238,36 @@ Connect **UnaShield Pin 5 (UART-RX)** to one of the Arduino pins below with UART
 ### (02) Can UnaShield work as a breakout board?
 UnaShield can be the breakout board of the onboard SIGFOX module. Only five pins need to connected, so that the SIGFOX module can be controlled by any external MCU (e.g. ARM CPU, Raspberry Pi) or integrated to any existing system.
 
-#### Power Pins：3V3, 5V, GND
+**Power Pins:** 3V3, 5V, GND
 
-#### UART Interface：UART-TX (D4), UART-RX (D5)
+**UART Interface:** UART-TX (D4), UART-RX (D5)
 
-**Both 3V3 and 5V** UART signaling levels are acceptable. The onboard level-shifting circuit regulates the 5V UART signaling to 3V3, which is the nominal power level of the onboard SIGFOX module. 
+Both 3V3 and 5V UART signaling levels are acceptable. The UnaShield's level-shifting circuit regulates the 5V UART signaling to 3V3, which is the nominal power level of the onboard SIGFOX module. 
 
 ### (03) Can the UART Interface be reused?
 
-The **D4 & D5** pins are used by the **UART interface** on UnaShield, for communicating with the onboard SIGFOX module. 
+The **D4, D5** pins are used by the **UART interface** on UnaShield, for communicating with the onboard SIGFOX module. 
 
-UART communications is designed for two endpoints only, so D4 & D5 cannot be connected for any other purpose.
+UART communications is designed for two endpoints only, so D4, D5 cannot be connected for any other purpose.
 
 ### (04) Can the I2C Interface be reused?
 
-The **A4 & A5** pins are the I2C interface on UnaShield, used to communicate with the **onboard sensors** 
-and **Grove connector #1** as well. 
+The **A4, A5** pins are the I2C interface on UnaShield, connecting to he **UnaShield accelerometer sensor**,
+**temperature / humidity / pressure sensor** and **Grove Connector #1**. 
 
 The **I2C interface** works in daisy-chain mode. Each terminal should have a unique I2C address so that they may be connected serially. 
 Every message transmitted on I2C contains the unique I2C address of the receiver, so that only one of the terminals in the daisy-chain can intercept and process the message.
 
 Any I2C device with a unique and distinguishable address can connect to these two pins simultaneously.
 
-### (05) Can Grove Connector #2 (A2 & A3) be reused?
+### (05) Can Grove Connector #2 (A2, A3) be reused?
 
-The **A2 & A3** pins are connected to **Grove Connector #2** for linking with Grove sensor connected to that port.
-If Grove Connector #2 is not connected to any Grove sensor, then A2 & A3 can be used for other Analog Input/Output connections.
+The **A2, A3** pins are connected to **Grove Connector #2** and to Grove sensor connected to that port.
+If Grove Connector #2 is not connected to any Grove sensor, then A2, A3 can be used for other Analog Input/Output connections.
 
 ### (06) Can D8 & D9 be reused?
 
-The **D8 & D9 pins** control the **user-programmable LED.** Remove the jumper on **J203** to disable the LED function, and D8 & D9 may be reused for other Digital Input/Output connections. 
+The **D8 & D9 pins** control the **User-Programmable LED.** Remove jumper **J203** to disable the LED function, then D8, D9 may be reused for other Digital Input/Output connections. 
 
 ### (08) What's the guideline for deciding if a pin is reusable?
 
@@ -275,11 +275,11 @@ Each pin can only be assigned to one function. The pin may not be reused until t
 If the same pin is used by two circuits (e.g. UART Interface and Digital Input/Output), 
 the conflict in the electrical signalling will lead to failure of both functions.
 
-The only exception is the I2C connection, which supports daisy-chaining of multiple sensors on the same I2C pins.
+The only exception is the I2C connection, which supports daisy-chaining of multiple sensors on the same two I2C pins.
 
-### (09) Any limitations on the I/O pins?
+### (09) What are the limitations of the Arduino Input/Output pins?
 
-UnaShield is designed to run on the Arduino hardware platform. All the I/O pins derive from the MCU on Arduino platform. Maximal current for each I/O pin is **40mA** on Arduino Uno R3.
+UnaShield was designed for the Arduino hardware platform. All the Arduino Input/Output pins derive from the Arduino MCU. Maximal current for each I/O pin is **40mA** on Arduino Uno R3.
 
 ### (10) How to activate the UnaShield?
 
