@@ -3,7 +3,7 @@
 
 Version：V1.0
  
-## CONTENTS
+## Contents
 
   About the UnaShield	???
   
@@ -20,7 +20,7 @@ Version：V1.0
 
 <kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image022.png" width="200"></kbd> 
 
-UnaShield is an Arduino Shield with a SIGFOX transceiver module that is compatible with Arduino UNO and other Arduino-based platform. It uses SIGFOX-certified WISOL or Radiocrafts module for all RCZs (Radio Configuration Zone).
+UnaShield is an Arduino Shield with a SIGFOX transceiver module that is compatible with Arduino Uno R3 and other Arduino-based development boards. It uses SIGFOX-certified WISOL or Radiocrafts modules to support all RCZs (Radio Configuration Zones).
 
 ‧ RCZ1：Europe, South Africa …
 
@@ -116,35 +116,39 @@ UnaShield is an Arduino Shield with a SIGFOX transceiver module that is compatib
 
 <kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image008.png" width="300"></kbd>
 
-### (1) SMA Connector
+### 1. SMA Connector
 
 The SMA connector is used for antenna connection. In order not to damage the onboard SIGFOX module, always connect an antenna before firing a SIGFOX message; even better to connect the antenna before the system power is supplied.
 
-### (2) SIGFOX Module
+### 2. SIGFOX Module
 
-UnaShield_V1(A) adopts Radiocrafts SIGFOX module, RC1692HP-SIG, certified for RCZ2 & RCZ4; UnaShield_V2(S) adopts WISOL SIGFOX modules in WSSFM10R series, certified for all RCZs. All the SIGFOX modules are accessible via UART interface with AT commands.
+UnaShield V1 / V1A embeds a Radiocrafts SIGFOX module **RC1692HP-SIG,** certified for RCZ2 and RCZ4; UnaShield V2 / V2S uses a WISOL SIGFOX module in the **WSSFM10R** series, certified for all RCZs. The SIGFOX modules are may be controlled via the **UART interface** with serial terminal commands (such as the **AT Command Format**).
 
-**- V1/V1A：**Radiocrafts RC1692HP-SIG (RCZ2 & RCZ4)
+#### UnaShield V1 / V1A：Radiocrafts RC1692HP-SIG, supporting RCZ2 and 4
 
-**- V2/V2S：**WISOL WSSFM10R (All RCZs)
+#### UnaShield V2 / V2S：WISOL WSSFM10R, supporting all RCZs: RCZ1, 2, 3 and 4
 
-### (3) Arduino UNO Standard Header
+### 3. Arduino Uno Standard Header
 
-There are four Arduino Standard headers on UnaShield; one 6-pin, two 8-pin, and one 10-pin headers. Not all the pins are used. User can use these un-used pins to extend the features of the Arduino-based system, but must be sure the interface level of Arduino UNO R3 is 5V, might not applicable to the targeted device or components.
+There are four Arduino Standard headers on UnaShield; one 6-pin, two 8-pin, and one 10-pin headers. Not all the pins are used.
 
-For the details of each pin assignment and definition of Arduino UNO, please check with the Arduino official website (https://www.arduino.cc/en/Main/ArduinoBoardUno)[https://www.arduino.cc/en/Main/ArduinoBoardUno]. 
+You may use the unused Arduino pins to connect other sensors and components. However take note that the voltage level of Arduino Uno R3 is **5V,** which might not be directly usable by some sensors or components.
 
-### (4) Push Button (UnaShield V2/V2S Only)
+For the details of each Arduino Uno pin assignment and definition, please check the Arduino official website:
+
+(https://www.arduino.cc/en/Main/ArduinoBoardUno)[https://www.arduino.cc/en/Main/ArduinoBoardUno] 
+
+### 4. Push Button (UnaShield V2 / V2S only)
 
 A push button (tact-switch) is connected to D6, a digital pin of Arduino UNO, and can be used to be the event-triggered initiator.
 
-### (5) Grove Connector (UnaShield V2/V2S Only)
+### 5. Grove Connector (UnaShield V2 / V2S only)
 
-UnaShield V2S is equipped with two Grove connectors, a standard 4-pin connector for sensors. You may connect any sensors or devices with Grove interfaces to extend the capabilities of the Arduino device. 
+UnaShield V2S is equipped with **two Grove connectors,** a standard 4-pin connector for Grove sensors. You may connect sensors or components with Grove interfaces to extend the capabilities of the Arduino device. 
 
-**- Grove Connector #1：Connection through I2C digital interface (SCL/SDA)**
+****- Grove Connector #1：Connected to Arduino I2C Digital Interface (SCL and SDA)
 
-**- Grove Connector #2：Connection through the analog interface (A2/A3)**
+****- Grove Connector #2：Connected to Arduino Analog Input/Output interface (A2 and A3)
 
 The onboard Grove connectors support two voltage levels: **3V3 or 5V.** Select the voltage through jumper **J204**.
 
@@ -156,21 +160,21 @@ The onboard Grove connectors support two voltage levels: **3V3 or 5V.** Select t
 
 **Eight onboard LEDs** are used to show the status of the UnaShield. The LEDs may be disabled through the jumpers **J201, J202 and J203**.
 
-#### Jumper J201 – Controls the Status LEDs of the WISOL module (TX, RX, CPU & RF)
+#### **Jumper J201 – Controls the Status LEDs of the WISOL module (TX, RX, CPU & RF)**
 
-| **WISOL Module LEDs**	| **Disabled**	| **Enabled (Default)** |
+|                       | **Disabled**	| **Enabled (Default)** |
 | --------------------- | :----------: | :-------------------: |
 | **Jumper J201**	 | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image029.png" width="100"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image030.png" width="100"> |
 
-#### Jumper J202 – Controls the Voltage Level LED (3V3 or 5V)
+#### **Jumper J202 – Controls the Voltage Level LED (3V3 or 5V)**
 
-| **Voltage Level LED**	| **Disabled**	| **Enabled (Default)** |
+|                       | **Disabled**	| **Enabled (Default)** |
 | --------------------- | :----------: | :-------------------: |
 | **Jumper J202**	 | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image029.png" width="100"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image030.png" width="100"> |
 
-#### Jumper J203 – Controls the User-Programmable LED (D8 & D9)
+#### **Jumper J203 – Controls the User-Programmable LED (D8 & D9)**
 
-| **User-Programmable LED**	| **Disabled**	| **Enabled (Default)** |
+|                 	         | **Disabled**	| **Enabled (Default)** |
 | ------------------------- | :----------: | :-------------------: |
 | **Jumper J203**	 | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image029.png" width="100"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image030.png" width="100"> |
 
