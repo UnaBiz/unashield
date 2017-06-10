@@ -17,6 +17,9 @@ Version：V1.0
   
  
 ## About the UnaShield
+
+<kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image022.png" width="300"></kbd> 
+
 UnaShield is an Arduino Shield with a SIGFOX transceiver module that is compatible with Arduino UNO and other Arduino-based platform. It uses SIGFOX-certified WISOL or Radiocrafts module for all RCZs (Radio Configuration Zone).
 
 ‧ RCZ1：Europe, South Africa …
@@ -48,19 +51,19 @@ UnaShield is an Arduino Shield with a SIGFOX transceiver module that is compatib
 
 <kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image012.png" width="500"></kbd><br>
 
-【UnaShield_V1A】
+**【UnaShield_V1A】**
 
 -----
 
 <kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image014.png" width="500"></kbd><br>
 
-【UnaShield_V2S】20170107
+**【UnaShield_V2S】20170107 **
 
 -----
 
 <kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image016.png" width="500"></kbd><br>
 
-【UnaShield_V2/V2S】20170325
+**【UnaShield_V2/V2S】20170325 **
 
 -----
 
@@ -103,45 +106,52 @@ UnaShield is an Arduino Shield with a SIGFOX transceiver module that is compatib
  
 <kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image020.png" width="400"></kbd><br>
 
-* All the pins marked with symbol * are essential for the onboard SIGFOX module. Even though UnaShield is designed on Arduino UNO-R3 platform, it can be integrated to be a standalone SIGFOX module if these essential five pins are properly connected.
-* The onboard SIGFOX module works with DC-3V3 power. All the pins assigned on UnaShield are interfaced with the level-shifter to adjust the voltage to the acceptable voltage level, 3V3.
+- All the pins marked with symbol * are essential for the onboard SIGFOX module. Even though UnaShield is designed on Arduino UNO-R3 platform, it can be integrated to be a standalone SIGFOX module if these essential five pins are properly connected.
+
+- The onboard SIGFOX module works with DC-3V3 power. All the pins assigned on UnaShield are interfaced with the level-shifter to adjust the voltage to the acceptable voltage level, 3V3.
 
 ##  Feature & Function Description
 
-<kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image022.png" width="300"></kbd><br>
+<kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image008.png" width="300"></kbd>
 
-(1) SMA Connector
+### (1) SMA Connector
 
 The SMA connector is used for antenna connection. In order not to damage the onboard SIGFOX module, always connect an antenna before firing a SIGFOX message; even better to connect the antenna before the system power is supplied.
 
-(2) SIGFOX Module
+### (2) SIGFOX Module
 
 UnaShield_V1(A) adopts Radiocrafts SIGFOX module, RC1692HP-SIG, certified for RCZ2 & RCZ4; UnaShield_V2(S) adopts WISOL SIGFOX modules in WSSFM10R series, certified for all RCZs. All the SIGFOX modules are accessible via UART interface with AT commands.
-‧V1/V1A：Radiocrafts RC1692HP-SIG (RCZ2 & RCZ4)
-‧V2/V2S：WISOL WSSFM10R (All RCZs)
 
-(3) Arduino UNO Standard Header
+**- V1/V1A：**Radiocrafts RC1692HP-SIG (RCZ2 & RCZ4)
+
+**- V2/V2S：**WISOL WSSFM10R (All RCZs)
+
+### (3) Arduino UNO Standard Header
 
 There are four Arduino Standard headers on UnaShield; one 6-pin, two 8-pin, and one 10-pin headers. Not all the pins are used. User can use these un-used pins to extend the features of the Arduino-based system, but must be sure the interface level of Arduino UNO R3 is 5V, might not applicable to the targeted device or components.
 For the details of each pin assignment and definition of Arduino UNO, please check with the Arduino official website (https://www.arduino.cc/en/Main/ArduinoBoardUno). 
 
-(4) Push Button (V2/V2S Only)
+### (4) Push Button (V2/V2S Only)
 
 A push button (tact-switch) is connected to D6, a digital pin of Arduino UNO, and can be used to be the event-triggered initiator.
 
-(5) Grove Connector (V2/V2S Only)
+### (5) Grove Connector (V2/V2S Only)
 
-UnaShield_V2S equips with two Grove connectors, a standard 4-pin connector type. User can connect any sensors or devices with Grove interfaces to extend the features of Arduino-based system. 
+UnaShield V2S is equipped with two Grove connectors, a standard 4-pin connector type. User can connect any sensors or devices with Grove interfaces to extend the features of the Arduino-based system. 
 
-‧Grove Connector #1：Connection through I2C digital interface (SCL/SDA)
+**- Grove Connector #1：Connection through I2C digital interface (SCL/SDA)**
 
-‧Grove Connector #2：Connection through the analog interface (A2/A3) 
+**- Grove Connector #2：Connection through the analog interface (A2/A3) **
 
-The power level of onboard Grove connector is alterable between 3V3 and 5V. Choose the most proper power source to the module/device connected by J204 configuration.
-Grove-VCC
-Voltage	Floating	5V	3.3V (Default)
-J204
-Configuration	 	 
+The power level of onboard Grove connector is alterable between 3V3 and 5V. Choose the most proper power source to the module/device connected by **J204** configuration.
+
+| Grove-VCC Voltage	| Floating	| 5V	| 3.3V (Default) |
+| ----------------- | -------- | -- | -------------- |
+| J204 Configuration | ![][i025] | ![][i026] | ![][i027] |
+
+[i025]: https://storage.googleapis.com/unabiz-media/unashield/hardware/image025.png ""
+[i026]: https://storage.googleapis.com/unabiz-media/unashield/hardware/image026.png ""
+[i027]: https://storage.googleapis.com/unabiz-media/unashield/hardware/image027.png ""
 
 (6) LED Indicator & Manual Switches (V2/V2S Only)
 
