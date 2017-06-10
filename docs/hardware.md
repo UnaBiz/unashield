@@ -225,7 +225,7 @@ Only the following pins are supported for UART RX in Leonardo & Micro:<br>
 For the users of these incompatible Arduino platforms, perform the two steps below to switch the **UnaShield's UART Receiving Pin (UART-RX)** from **Arduino D5 Pin** to another Arduino pin with UART RX capability.
 
 #### Step 1
-Assign the original **UnaShield Pin 5 (UART-RX)** as an input, by choosing a setting marked **Green** in the table below. 
+Assign the original **UnaShield Pin 5 (UART-RX)** as an input, by choosing a setting marked **<span style="color: lime">Green</span>** in the table below. 
 You may keep **UnaShield Pin 5 (UART-RX)** disconnected on the Arduino Uno R3.
 
 #### Step 2
@@ -233,9 +233,9 @@ Connect **UnaShield Pin 5 (UART-RX)** to one of the Arduino pins below with UART
 
 | **DDxn** | **PORTxn** | **PUD (in MCUCR)** | **I/O** | **Pull-Up** | **Comment** |					
 | :------: | :--------: | :----------------: | :-----: | :---------: | :---------: |					
-| **<span style="color: lightgreen">0</span>** | **0** | **X** | **INPUT** | **NO** | **HI-Z** |					
+| **<span style="color: lime">0</span>** | **<span style="color: lime">0</span>** | **<span style="color: lime">X</span>** | **<span style="color: lime">INPUT</span>** | **<span style="color: lime">NO</span>** | **<span style="color: lime">HI-Z</span>** |					
 | **0** | **1** | **0** | **INPUT** | **YES** |  |					
-| **0** | **1** | **1** | **INPUT** | **NO** | **HI-Z** |					
+| **<span style="color: lime">0</span>** | **<span style="color: lime">1</span>** | **<span style="color: lime">1</span>** | **<span style="color: lime">INPUT</span>** | **<span style="color: lime">NO</span>** | **<span style="color: lime">HI-Z</span>** |					
 | **1** | **0** | **X** | **OUTPUT** | **NO** | **Output Low** |					
 | **1** | **1** | **X** | **OUTPUT** | **NO** | **Output High** |					
 
