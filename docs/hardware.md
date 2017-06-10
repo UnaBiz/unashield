@@ -111,7 +111,11 @@ Version：V1.0
   Even though UnaShield is designed for Arduino Uno R3, the UnaShield can be integrated with another device as a 
   **SIGFOX network adapter** if these essential five pins are properly connected.
 
+<br><br>
+
 - The onboard SIGFOX module works with **DC 3V3 power.** All the Arduino pins used by the UnaShield are connected to a **level-shifter** to ensure that the pin voltage is always fixed at 3V3.
+
+<br><br><br>
 
 ----- 
 ##  Feature and Function Description
