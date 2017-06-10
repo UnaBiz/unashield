@@ -159,7 +159,7 @@ The onboard Grove connectors support two voltage levels: **3V3 or 5V.** Select t
 
 |  	              | **Floating**	| **5V**	 | **3.3V (Default)** |
 | --------------- | :----------: | :-----: | :----------------: |
-| **Jumper J204** | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image024.png" width="50"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image026.png" width="50"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image027.png" width="50"> |
+| **Jumper J204** | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image024.png" width="80"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image026.png" width="80"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image027.png" width="80"> |
 
 -----
 ### 6. LED Indicator and Manual Switches (UnaShield V2 / V2S only)
@@ -170,19 +170,19 @@ The onboard Grove connectors support two voltage levels: **3V3 or 5V.** Select t
 
 |                       | **Disabled**	| **Enabled (Default)** |
 | --------------------- | :----------: | :-------------------: |
-| **Jumper J201**	 | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image029.png" width="100"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image030.png" width="100"> |
+| **Jumper J201**	 | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image029.png" width="80"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image030.png" width="80"> |
 
 **Jumper J202 – Controls the Grove Voltage Level LED (3V3 or 5V)**
 
 |                       | **Disabled**	| **Enabled (Default)** |
 | --------------------- | :----------: | :-------------------: |
-| **Jumper J202**	 | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image029.png" width="100"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image030.png" width="100"> |
+| **Jumper J202**	 | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image029.png" width="80"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image030.png" width="80"> |
 
 **Jumper J203 – Controls the User-Programmable LEDs (D8, D9)**
 
 |                 	         | **Disabled**	| **Enabled (Default)** |
 | ------------------------- | :----------: | :-------------------: |
-| **Jumper J203**	 | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image029.png" width="100"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image030.png" width="100"> |
+| **Jumper J203**	 | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image029.png" width="80"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image030.png" width="80"> |
 
 -----
 ### 7. I2C Interface (UnaShield V2 / V2S only)
