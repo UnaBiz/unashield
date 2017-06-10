@@ -138,82 +138,89 @@ A push button (tact-switch) is connected to D6, a digital pin of Arduino UNO, an
 
 ### (5) Grove Connector (UnaShield V2/V2S Only)
 
-UnaShield V2S is equipped with two Grove connectors, a standard 4-pin connector type. User can connect any sensors or devices with Grove interfaces to extend the features of the Arduino-based system. 
+UnaShield V2S is equipped with two Grove connectors, a standard 4-pin connector for sensors. You may connect any sensors or devices with Grove interfaces to extend the capabilities of the Arduino device. 
 
 **- Grove Connector #1：Connection through I2C digital interface (SCL/SDA)**
 
 **- Grove Connector #2：Connection through the analog interface (A2/A3)**
 
-The power level of onboard Grove connector is alterable between 3V3 and 5V. Choose the most proper power source to the module/device connected by **J204** configuration.
+The onboard Grove connectors support two voltage levels: **3V3 or 5V.** Select the voltage through jumper **J204**.
 
 | **Grove-VCC Voltage** 	| **Floating**	| **5V**	 | **3.3V (Default)** |
 | ---------------------- | :----------: | :-----: | :----------------: |
-| **J204 Configuration** | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image024.png" width="100"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image026.png" width="100"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image027.png" width="100"> |
+| **Jumper J204** | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image024.png" width="100"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image026.png" width="100"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image027.png" width="100"> |
 
 ### (6) LED Indicator & Manual Switches (UnaShield V2/V2S Only)
 
-There are eight onboard LEDs used to show the status of UnaShield operation. The LED indication can be enabled/disabled by J201/J202/J203 configuration respectively. 
+**Eight onboard LEDs** are used to show the status of the UnaShield. The LEDs may be disabled through the jumpers **J201, J202 and J203**.
 
-#### A. J201 – the switch for LED status of WISOL module (TX, RX, CPU & RF)
-| Indication Function	| Disabled	| Enabled (Default) |
-| ------------------- | -------- | ----------------- |
-| J201 Configuration	 | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image029.png" width="100"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image030.png" width="100"> |
+#### Jumper J201 – Controls the Status LEDs of the WISOL module (TX, RX, CPU & RF)
 
-#### B. J202 – the switch for LED status of onboard powers (3V3 & 5V)
-| Indication Function	| Disabled	| Enabled (Default) |
+| WISOL Module LEDs	| Disabled	| Enabled (Default) |
 | ------------------- | -------- | ----------------- |
-| J202 Configuration	 | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image029.png" width="100"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image030.png" width="100"> |
+| **Jumper J201**	 | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image029.png" width="100"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image030.png" width="100"> |
 
-#### C. J203 – the switch for LED status of GPIO Control (D8 & D9)
-| Indication Function	| Disabled	| Enabled (Default) |
+#### Jumper J202 – Controls the Voltage Level LED (3V3 or 5V)
+
+| Voltage Level LED	| Disabled	| Enabled (Default) |
 | ------------------- | -------- | ----------------- |
-| J203 Configuration	 | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image029.png" width="100"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image030.png" width="100"> |
+| **Jumper J202**	 | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image029.png" width="100"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image030.png" width="100"> |
+
+#### Jumper J203 – Controls the User-Programmable LED (D8 & D9)
+
+| User-Programmable LED	| Disabled	| Enabled (Default) |
+| ------------------- | -------- | ----------------- |
+| **Jumper J203**	 | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image029.png" width="100"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image030.png" width="100"> |
 
 ### (7) I2C Interface (UnaShield V2/V2S Only)
 
-I2C interface is a two-wire and bi-directional protocol, which consists of one data line (SDA) and one clock (SCK). I2C works in the daisy-chain configuration, so one master device can communicate with more than one slave device by the unique device address.
+**I2C (Inter-Integrated Circuit)** is a two-wire, bidirectional protocol for connecting multiple sensors on the same two wires.
+The I2C interface requires two pins: the data line **(SDA)** and the clock line **(SCK).** I2C works in the **daisy-chain configuration,** so one master device can communicate with more than one slave device by the selecting the unique device address of the slave device.
 
-Not only the two onboard sensors, but also the Grove Connector #1 are connected by a unique and alternative I2C address code by hardware setting. 
+The **onboard accelerometer sensor, temperature / humidity / pressure sensor and Grove Connector #1** are connected to the I2C bus by unique I2C addresses, which are preset in the sensor hardware. 
 
-#### A. NXP Accelerometer (G-Sensor) – MMA8451Q
-| SA0	 | I2C Address	| Default |
-| :--: | :---------: | :-----: |
-| LOW	 | 0x1C	       | V       |
-| HIGH	| 0x1D	       |         |
+#### NXP Accelerometer (G-Sensor) – MMA8451Q
 
-#### B. BOSCH Temperature/Humidity/Pressure Sensor – BME280
-| SD0	 | I2C Address	| Default |
-| :--: | :---------: | :-----: |
-| LOW	 | 0x76	       | V       |
-| HIGH	| 0x77	       |         |
+| **SA0**	 | **I2C Address**	| **Default** |
+| :------: | :-------------: | :---------: |
+| **LOW**	 | **0x1C**	       | **V**       |
+| **HIGH**	| **0x1D**	       |             |
 
-#### C. Grove Connector #1
-Depending on the sensor connected through the Grove Connector #1, the I2C address should be set to an unused one to avoid address conflict. 
+#### BOSCH Temperature / Humidity / Pressure Sensor – BME280
+
+| **SD0**	 | **I2C Address**	| **Default** |
+| :------: | :-------------: | :---------: |
+| **LOW**	 | **0x76**	       | **V**       |
+| **HIGH**	| **0x77**	       |             |
+
+#### Grove Connector #1
+
+The sensor connected through Grove Connector #1 should use an I2C address that is distinct from the above I2C addresses, to avoid address conflict. 
 
 ## Frequently Asked Questions
 
-### (01) Can UnaShield be use on all Arduino platforms?
+### (01) Can the UnaShield be used on all Arduino platforms?
 
-UnaShield is well-tested on Arduino Uno R3; however, it’s not compatible with all the variants of Arduino boards, because the pin definition difference. Here are two series Arduino platforms suffered from the incompatibility
+UnaShield is well-tested on Arduino Uno R3; however, it’s not compatible with all variants of Arduino boards, due to the different pin definitions. Here two classes of Arduino boards that are incompatible with the UnaShield due to the pin definitions:
 
-#### - Mega & Mega2560
+#### Mega / Mega2560
 
-Only the following pins can be used for **RX in Mega & Mega2560:**<br>
+Only the following pins may be used for **RX in Mega & Mega2560:**<br>
 **10, 11, 12, 13, 50, 51, 52, 53, 62, 63, 64, 65, 66, 67, 68, 69**
 
-#### - Leonardo & Micro
+#### Leonardo / Micro
 
-Only the following pins can be used for **RX in Leonardo & Micro:** <br>
+Only the following pins may be used for **RX in Leonardo & Micro:** <br>
 **8, 9, 10, 11, 14, 15, 16**
 
-For the users of these incompatible Arduino platforms, the two steps below are recommended for fixing the incompatibility by switching the **UART receiving pin (UART-RX)** from the **Digital PIN 5** to another pin with RX function.
+For the users of these incompatible Arduino platforms, perform the two steps below to switch the **UART receiving pin (UART-RX)** from the **Digital PIN 5** to another pin with RX function.
 
 #### Step 1
-Assign the original **PIN 5 (UART-RX)** as an input, by choosing a setting marked **Green** in the table shown below. 
+Assign the original **PIN 5 (UART-RX)** as an input, by choosing a setting marked **Green** in the table below. 
 You may keep **PIN 5 (UART-RX)** disconnected on the Arduino Uno R3.
 
 #### Step 2
-Connect **PIN 5 (UART-RX)** to one of the pins with receiving function, to be the new UART-RX. Use an an external metal wire.
+Connect **PIN 5 (UART-RX)** to one of the pins below with receiving function, so that it becomes the new UART-RX. Use a jumper cable to connect the pins.
 
 | **DDxn** | **PORTxn** | **PUD (in MCUCR)** | **I/O** | **Pull-Up** | **Comment** |					
 | :----------: | :----------: | :----------: | :----------: | :----------: | :----------: |					
