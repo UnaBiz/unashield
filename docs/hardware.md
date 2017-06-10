@@ -7,11 +7,11 @@ Version：V1.0
 
   About the UnaShield
   
-  UnaShield Schematics
+  Schematics
   
-  Pin Assignment of UnaShield
+  Pin Assignment
   
-  Feature & Function Description
+  Features and Functions
   
   Frequently Asked Questions
   
@@ -46,7 +46,7 @@ Version：V1.0
 | **Antenna** | **Matching Circuit** |  | **✔** |  | **✔** |					
 
 ----- 
-##  UnaShield Schematics
+##  Schematics
 
 <kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image012.png" width="500"></kbd><br>
 
@@ -66,7 +66,7 @@ Version：V1.0
 
 -----
 
-##  Pin Assignment of UnaShield
+##  Pin Assignment
 
 | **Arduino Pins** | **UnaShield V1A** | **UnaShield V2 / V2S** | **Description** |			
 | :----------: | :----------: | :----------: | :---------- |			
@@ -118,7 +118,7 @@ Version：V1.0
 <br><br><br>
 
 ----- 
-##  Feature and Function Description
+##  Feature and Functions
 
 ### 1. SMA Connector
 
