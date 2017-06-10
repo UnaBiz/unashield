@@ -100,6 +100,8 @@ UnaShield is an Arduino Shield with a SIGFOX transceiver module that is compatib
 | **D1** | **NC** | **NC** | **Digital Pin-1** |			
 | **D0** | **NC** | **NC** | **Digital Pin-0** |			
  
+<kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image020.png" width="500"></kbd><br>
+
 * All the pins marked with symbol * are essential for the onboard SIGFOX module. Even though UnaShield is designed on Arduino UNO-R3 platform, it can be integrated to be a standalone SIGFOX module if these essential five pins are properly connected.
 * The onboard SIGFOX module works with DC-3V3 power. All the pins assigned on UnaShield are interfaced with the level-shifter to adjust the voltage to the acceptable voltage level, 3V3.
 
@@ -184,12 +186,12 @@ Depending on the sensor connected through the Grove Connector #1, the I2C addres
 
 UnaShield is well-tested on Arduino UNO R3; however, it’s not compatible with all the variants of Arduino boards, because the pin definition difference. Here are two series Arduino platforms suffered from the incompatibility
 
-- ‧Mega & Mega2560
+- Mega & Mega2560
 
 Only the following pins can be used for RX in Mega & Mega2560：<br>
 10, 11, 12, 13, 50, 51, 52, 53, 62, 63, 64, 65, 66, 67, 68, 69
 
-‧ Leonardo & Micro
+- Leonardo & Micro
 
 Only the following pins can be used for RX in Leonardo & Micro：<br>
 8, 9, 10, 11, 14, 15, 16
