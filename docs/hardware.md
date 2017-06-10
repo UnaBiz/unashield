@@ -53,42 +53,40 @@ UnaShield is an Arduino Shield with a SIGFOX transceiver module that is compatib
  
 ##  Pin Assignment of UnaShields
 
-Arduino
-Pins	UnaShield
-V1/V1A	UnaShield
-V2/V2S	Description
-Reserved	NC	NC	Reserved
-IOREF	5V	5V	5V Power Source from Arduino platform
-RESET	RESET	RESET	Reset Arduino MCU & SIGFOX Module；Low active
-3V3	3V3	3V3	3V3 Power Source from Arduino platform
-5V	5V	5V	5V Power Source from Arduino platform
-GND	GND	GND	Grounding & power/signal reference level
-GND	GND	GND	Grounding & power/signal reference level
-VIN	NC	NC	Extra power source input of Arduino platform
-A0	NC	NC	Analog Pin-0 
-A1	NC	NC	Analog Pin-1
-A2	NC	A2	Analog Pin-2；Grove Connector #2
-A3	NC	A3	Analog Pin-3；Grove Connector #2
-A4	NC	I2C-SDA	Analog Pin-4；Grove Connector #1
-A5	NC	I2C-SCL	Analog Pin-5；Grove Connector #1
-SCL	NC	NC	Branch of A5 (I2C-SCL)
-SDA	NC	NC	Branch of A4 (I2C-SDA)
-AREF	NC	NC	Reference level input for Arduino MCU
-GND	GND	GND	Grounding & power/signal reference level
-D13	NC	NC	Digital Pin-13
-D12	NC	NC	Digital Pin-12
-D11	NC	NC	Digital Pin-11
-D10	NC	NC	Digital Pin-10
-D9	NC	Red-LED	User Programmable Red LED
-D8	NC	Green-LED	User Programmable Green LED
-D7	NC	Wakeup	Wakeup onboard module from deep sleep mode
-D6	NC	Button	Push button；Push to low signal level
-D5	UART-RX	UART-RX	UART receiving pin
-D4	UART-TX	UART-TX	UART transmitting pin
-D3	NC	INT2	Interrupt#2 of Bosch sensor (BME280)
-D2	NC	INT1	Interrupt#1 of Bosch sensor (BME280)
-D1	NC	NC	Digital Pin-1
-D0	NC	NC	Digital Pin-0
+| **Arduino Pins** | **UnaShield V1/V1A** | **UnaShield V2/V2S** | **Description** |  |  |			
+| :----------: | :----------: | :----------: | :---------- |  |  |			
+| **Reserved** | **NC** | **NC** | **Reserved** |  |  |			
+| **IOREF** | **5V** | **5V** | **5V Power Source from Arduino platform** |  |  |			
+| **RESET** | **RESET** | **RESET** | **Reset Arduino MCU & SIGFOX Module；Low active** |  |  |			
+| **3V3** | **3V3** | **3V3** | **3V3 Power Source from Arduino platform** |  |  |			
+| **5V** | **5V** | **5V** | **5V Power Source from Arduino platform** |  |  |			
+| **GND** | **GND** | **GND** | **Grounding & power/signal reference level** |  |  |			
+| **GND** | **GND** | **GND** | **Grounding & power/signal reference level** |  |  |			
+| **VIN** | **NC** | **NC** | **Extra power source input of Arduino platform** |  |  |			
+| **A0** | **NC** | **NC** | **Analog Pin-0** |  |  |			
+| **A1** | **NC** | **NC** | **Analog Pin-1** |  |  |			
+| **A2** | **NC** | **A2** | **Analog Pin-2；Grove Connector #2** |  |  |			
+| **A3** | **NC** | **A3** | **Analog Pin-3；Grove Connector #2** |  |  |			
+| **A4** | **NC** | **I2C-SDA** | **Analog Pin-4；Grove Connector #1** |  |  |			
+| **A5** | **NC** | **I2C-SCL** | **Analog Pin-5；Grove Connector #1** |  |  |			
+| **SCL** | **NC** | **NC** | **Branch of A5 (I2C-SCL)** |  |  |			
+| **SDA** | **NC** | **NC** | **Branch of A4 (I2C-SDA)** |  |  |			
+| **AREF** | **NC** | **NC** | **Reference level input for Arduino MCU** |  |  |			
+| **GND** | **GND** | **GND** | **Grounding & power/signal reference level** |  |  |			
+| **D13** | **NC** | **NC** | **Digital Pin-13** |  |  |			
+| **D12** | **NC** | **NC** | **Digital Pin-12** |  |  |			
+| **D11** | **NC** | **NC** | **Digital Pin-11** |  |  |			
+| **D10** | **NC** | **NC** | **Digital Pin-10** |  |  |			
+| **D9** | **NC** | **Red-LED** | **User Programmable Red LED** |  |  |			
+| **D8** | **NC** | **Green-LED** | **User Programmable Green LED** |  |  |			
+| **D7** | **NC** | **Wakeup** | **Wakeup onboard module from deep sleep mode** |  |  |			
+| **D6** | **NC** | **Button** | **Push button；Push to low signal level** |  |  |			
+| **D5** | **UART-RX** | **UART-RX** | **UART receiving pin** |  |  |			
+| **D4** | **UART-TX** | **UART-TX** | **UART transmitting pin** |  |  |			
+| **D3** | **NC** | **INT2** | **Interrupt#2 of Bosch sensor (BME280)** |  |  |			
+| **D2** | **NC** | **INT1** | **Interrupt#1 of Bosch sensor (BME280)** |  |  |			
+| **D1** | **NC** | **NC** | **Digital Pin-1** |  |  |			
+| **D0** | **NC** | **NC** | **Digital Pin-0** |  |  |			
  
 * All the pins marked with symbol * are essential for the onboard SIGFOX module. Even though UnaShield is designed on Arduino UNO-R3 platform, it can be integrated to be a standalone SIGFOX module if these essential five pins are properly connected.
 * The onboard SIGFOX module works with DC-3V3 power. All the pins assigned on UnaShield are interfaced with the level-shifter to adjust the voltage to the acceptable voltage level, 3V3.
