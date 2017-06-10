@@ -156,7 +156,7 @@ The onboard Grove connectors support two voltage levels: **3V3 or 5V.** Select t
 | ---------------------- | :----------: | :-----: | :----------------: |
 | **Jumper J204** | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image024.png" width="100"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image026.png" width="100"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image027.png" width="100"> |
 
-### (6) LED Indicator & Manual Switches (UnaShield V2/V2S Only)
+### 6. LED Indicator & Manual Switches (UnaShield V2/V2S Only)
 
 **Eight onboard LEDs** are used to show the status of the UnaShield. The LEDs may be disabled through the jumpers **J201, J202 and J203**.
 
@@ -178,7 +178,7 @@ The onboard Grove connectors support two voltage levels: **3V3 or 5V.** Select t
 | ------------------------- | :----------: | :-------------------: |
 | **Jumper J203**	 | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image029.png" width="100"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image030.png" width="100"> |
 
-### (7) I2C Interface (UnaShield V2/V2S Only)
+### 7. I2C Interface (UnaShield V2/V2S Only)
 
 **I2C (Inter-Integrated Circuit)** is a two-wire, bidirectional protocol for connecting multiple sensors on the same two wires.
 The I2C interface requires two pins: the data line **(SDA)** and the clock line **(SCK).** I2C works in the **daisy-chain configuration,** so one master device can communicate with more than one slave device by the selecting the unique device address of the slave device.
