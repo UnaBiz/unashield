@@ -1,14 +1,19 @@
  
 # Hardware Manual
+
 Version：V1.0
  
 ## CONTENTS
-  About the UnaShield	???
-  Top-View of UnaShields	???
-  Pin Assignment of UnaShields	???
-  Feature & Function Description	???
-  Frequently Asked Questions	???
 
+  About the UnaShield	???
+  
+  Top-View of UnaShields	???
+  
+  Pin Assignment of UnaShields	???
+  
+  Feature & Function Description	???
+  
+  Frequently Asked Questions	???
  
 ## About the UnaShield
 UnaShield is an Arduino Shield with a SIGFOX transceiver module that is compatible with Arduino UNO and other Arduino-based platform. It uses SIGFOX-certified WISOL or Radiocrafts module for all RCZs (Radio Configuration Zone).
