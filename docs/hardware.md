@@ -106,9 +106,11 @@ UnaShield is an Arduino Shield with a SIGFOX transceiver module that is compatib
  
 <kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image020.png" width="200"></kbd><br>
 
-- All the pins marked with symbol * are essential for the onboard SIGFOX module. Even though UnaShield is designed on Arduino UNO-R3 platform, it can be integrated to be a standalone SIGFOX module if these essential five pins are properly connected.
+- The five pins marked by `*` are required for proper operation of the onboard SIGFOX module. 
+  Even though UnaShield is designed for Arduino Uno R3, the UnaShield can be integrated with another device as a 
+  **SIGFOX network adapter** if these essential five pins are properly connected.
 
-- The onboard SIGFOX module works with DC-3V3 power. All the pins assigned on UnaShield are interfaced with the level-shifter to adjust the voltage to the acceptable voltage level, 3V3.
+- The onboard SIGFOX module works with **DC 3V3 power.** All the Arduino pins used by the UnaShield are connected to a **level-shifter** to ensure that the pin voltage is always fixed at 3V3.
 
 ##  Feature & Function Description
 
@@ -156,20 +158,20 @@ The onboard Grove connectors support two voltage levels: **3V3 or 5V.** Select t
 
 #### Jumper J201 – Controls the Status LEDs of the WISOL module (TX, RX, CPU & RF)
 
-| WISOL Module LEDs	| Disabled	| Enabled (Default) |
-| ------------------- | -------- | ----------------- |
+| **WISOL Module LEDs**	| **Disabled**	| **Enabled (Default)** |
+| --------------------- | :----------: | :-------------------: |
 | **Jumper J201**	 | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image029.png" width="100"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image030.png" width="100"> |
 
 #### Jumper J202 – Controls the Voltage Level LED (3V3 or 5V)
 
-| Voltage Level LED	| Disabled	| Enabled (Default) |
-| ------------------- | -------- | ----------------- |
+| **Voltage Level LED**	| **Disabled**	| **Enabled (Default)** |
+| --------------------- | :----------: | :-------------------: |
 | **Jumper J202**	 | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image029.png" width="100"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image030.png" width="100"> |
 
 #### Jumper J203 – Controls the User-Programmable LED (D8 & D9)
 
-| User-Programmable LED	| Disabled	| Enabled (Default) |
-| ------------------- | -------- | ----------------- |
+| **User-Programmable LED**	| **Disabled**	| **Enabled (Default)** |
+| ------------------------- | :----------: | :-------------------: |
 | **Jumper J203**	 | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image029.png" width="100"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image030.png" width="100"> |
 
 ### (7) I2C Interface (UnaShield V2/V2S Only)
