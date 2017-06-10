@@ -22,30 +22,30 @@ Version：V1.0
 
 UnaShield is an Arduino Shield with a SIGFOX transceiver module that is compatible with Arduino Uno R3 and other Arduino-based development boards. It uses SIGFOX-certified WISOL or Radiocrafts modules to support all RCZs (Radio Configuration Zones).
 
-‧ RCZ1：Europe, South Africa …
+- **RCZ1:** Europe, Oman, South Africa
 
-‧ RCZ2：North America …
+- **RCZ2:** North America
 
-‧ RCZ3：Japan …
+- **RCZ3:** Japan
 
-‧ RCZ4：Singapore, Taiwan, Australia, New Zealand, Hong Kong, South America …
+- **RCZ4:** Australia, Hong Kong, New Zealand, Singapore, South America, Taiwan
 
 | **Features** |  | **V1A (20161128)** | **V2 (20170325)** | **V2S (20170107)** | **V2S (20170325)** |					
 | :---------- | :---------- | :----------: | :----------: | :----------: | :----------: |					
-| **SIGFOX Module** | **Radiocrafts RC1692HP-SIG** | **V** |  |  |  |					
-|  | **WISOL WSSFM10R** |  | **V** | **V** | **V** |					
+| **SIGFOX Module** | **Radiocrafts RC1692HP-SIG** | **✔** |  |  |  |					
+|  | **WISOL WSSFM10R** |  | **✔** | **✔** | **✔** |					
 |  | **SIGFOX RCZ** | **2 / 4** | **1 / 2 / 3 / 4** | **1 / 2 / 3 / 4** | **1 / 2 / 3 / 4** |					
-| **Sensor** | **Accelerometer (MMA8451Q)** |  |  | **V** | **V** |					
-|  | **Temperature Sensor (BME280)** |  |  | **V** | **V** |					
-|  | **Humidity Sensor (BME280)** |  |  | **V** | **V** |					
-|  | **Pressure Sensor (BME280)** |  |  | **V** | **V** |					
-|  | **Push Button** |  | **V** | **V** | **V** |					
-| **Peripheral Connection** | **Digital Grove (I2C)** |  | **V** | **V** | **V** |					
-|  | **Analog Grove** |  | **V** | **V** | **V** |					
-| **LED** | **Power Indication** | **V** | **V** | **V** | **V** |					
-|  | **General Indication** |  | **V** | **V** | **V** |					
-|  | **Module Status Monitor** |  | **V** | **V** | **V** |					
-| **Antenna** | **Matching Circuit** |  | **V** |  | **V** |					
+| **Sensor** | **Accelerometer (MMA8451Q)** |  |  | **✔** | **✔** |					
+|  | **Temperature Sensor (BME280)** |  |  | **✔** | **✔** |					
+|  | **Humidity Sensor (BME280)** |  |  | **✔** | **✔** |					
+|  | **Pressure Sensor (BME280)** |  |  | **✔** | **✔** |					
+|  | **Push Button** |  | **✔** | **✔** | **✔** |					
+| **Peripheral Connection** | **Digital Grove (I2C)** |  | **✔** | **✔** | **✔** |					
+|  | **Analog Grove** |  | **✔** | **✔** | **✔** |					
+| **LED** | **Power Indication** | **✔** | **✔** | **✔** | **✔** |					
+|  | **General Indication** |  | **✔** | **✔** | **✔** |					
+|  | **Module Status Monitor** |  | **✔** | **✔** | **✔** |					
+| **Antenna** | **Matching Circuit** |  | **✔** |  | **✔** |					
 
 ##  Top-View of UnaShields
 
@@ -124,13 +124,13 @@ The **SMA (SubMiniature version A) Connector** is used for connecting the coaxia
 
 UnaShield V1(A) embeds a Radiocrafts SIGFOX module **RC1692HP-SIG,** certified for RCZ2 and RCZ4; UnaShield V2 / V2S uses a WISOL SIGFOX module in the **WSSFM10R Series,** certified for all four RCZs. The SIGFOX modules may be controlled via the **UART interface** with serial terminal commands (similar to the **AT Command Format** used by modems).
 
-#### UnaShield V1(A)：Radiocrafts RC1692HP-SIG, for RCZ2 and 4
+#### **UnaShield V1A：Radiocrafts RC1692HP-SIG, for RCZ2 and 4**
 
-#### UnaShield V2 / V2S：WISOL WSSFM10R, for all RCZs: RCZ1, 2, 3 and 4
+#### **UnaShield V2 / V2S：WISOL WSSFM10R, for all RCZs: RCZ1, 2, 3 and 4**
 
 ### 3. Arduino Uno Standard Header
 
-There are four Arduino standard headers (pin connectors) on UnaShield: one 6-pin header, two 8-pin headers, and one 10-pin header. Not all Arduino pins are used by the UnaShield, some are passed through by the UnaShield.
+UnaShield has four Arduino standard headers (pin connectors): one 6-pin header, two 8-pin headers, and one 10-pin header. Not all Arduino pins are used by the UnaShield, some Arduino pins are passed through unmodified by UnaShield.
 
 You may use the unused Arduino pins to connect other sensors and components. However take note that the voltage level of Arduino Uno R3 is **5V,** which may not be directly usable by some sensors or components.
 
@@ -141,39 +141,40 @@ For the details of each Arduino Uno pin assignment and definition, please check 
 ### 4. Push Button (UnaShield V2 / V2S only)
 
 A **Push Button** (tact switch) is connected to the **D6 Digital Input** pin of the Arduino Uno.
+
 The button may be programmed in Arduino sketches to trigger certain functions when pressed.
 
 ### 5. Grove Connector (UnaShield V2 / V2S only)
 
 UnaShield V2S is equipped with **two Grove Connectors,** a standard 4-pin connector for Grove sensors. You may connect sensors or components with Grove interfaces to extend the capabilities of the Arduino device. 
 
-****Grove Connector #1：Connected to Arduino I2C Digital Interface (SCL and SDA)
+**Grove Connector #1：Connected to Arduino I2C Digital Interface (SCL and SDA)**
 
-****Grove Connector #2：Connected to Arduino Analog Input/Output interface (A2 and A3)
+**Grove Connector #2：Connected to Arduino Analog Input/Output interface (A2 and A3)**
 
-The onboard Grove connectors support two voltage levels: **3V3 or 5V.** Select the voltage through jumper **J204**.
+The onboard Grove connectors support two voltage levels: **3V3 or 5V.** Select the Grove voltage through jumper **J204**.
 
 |  	              | **Floating**	| **5V**	 | **3.3V (Default)** |
 | --------------- | :----------: | :-----: | :----------------: |
 | **Jumper J204** | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image024.png" width="100"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image026.png" width="100"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image027.png" width="100"> |
 
-### 6. LED Indicator & Manual Switches (UnaShield V2/V2S Only)
+### 6. LED Indicator and Manual Switches (UnaShield V2 / V2S only)
 
 **Eight onboard LEDs** are used to show the status of the UnaShield. The LEDs may be disabled through the jumpers **J201, J202 and J203**.
 
-#### **Jumper J201 – Controls the Status LEDs of the WISOL module (TX, RX, CPU & RF)**
+**Jumper J201 – Controls the Status LEDs of the WISOL module (TX, RX, CPU & RF)**
 
 |                       | **Disabled**	| **Enabled (Default)** |
 | --------------------- | :----------: | :-------------------: |
 | **Jumper J201**	 | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image029.png" width="100"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image030.png" width="100"> |
 
-#### **Jumper J202 – Controls the Voltage Level LED (3V3 or 5V)**
+**Jumper J202 – Controls the Grove Voltage Level LED (3V3 or 5V)**
 
 |                       | **Disabled**	| **Enabled (Default)** |
 | --------------------- | :----------: | :-------------------: |
 | **Jumper J202**	 | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image029.png" width="100"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image030.png" width="100"> |
 
-#### **Jumper J203 – Controls the User-Programmable LEDs (D8, D9)**
+**Jumper J203 – Controls the User-Programmable LEDs (D8, D9)**
 
 |                 	         | **Disabled**	| **Enabled (Default)** |
 | ------------------------- | :----------: | :-------------------: |
@@ -182,27 +183,28 @@ The onboard Grove connectors support two voltage levels: **3V3 or 5V.** Select t
 ### 7. I2C Interface (UnaShield V2 / V2S only)
 
 **I2C (Inter-Integrated Circuit)** is a two-wire, bidirectional protocol for connecting multiple sensors and components on the same pair of wires.
-The I2C interface requires two pins: **data line (SDA) and clock line (SCK).** I2C works in the **daisy-chain configuration,** so one master device can communicate with more than one slave device by the selecting the unique I2C address of the slave device.
 
-The **onboard accelerometer sensor, temperature / humidity / pressure sensor and Grove Connector #1** are connected to the I2C bus by unique I2C addresses, which are preset in the sensor hardware. 
+The I2C interface requires two pins: **data line (SDA)** and **clock line (SCK).** I2C works in the **daisy-chain configuration,** so one master device can communicate with more than one slave device, just by selecting the unique I2C address of the slave device.
+
+The **UnaShield accelerometer sensor** and **temperature / humidity / pressure sensor** are connected to the I2C bus by unique I2C addresses, which are preset in the sensor hardware. 
 
 #### **NXP Accelerometer (G-Sensor) – MMA8451Q**
 
 | **SA0**	 | **I2C Address**	| **Default** |
 | :------: | :-------------: | :---------: |
-| **LOW**	 | **0x1C**	       | **V**       |
+| **LOW**	 | **0x1C**	       | **✔**       |
 | **HIGH**	| **0x1D**	       |             |
 
 #### **BOSCH Temperature / Humidity / Pressure Sensor – BME280**
 
 | **SD0**	 | **I2C Address**	| **Default** |
 | :------: | :-------------: | :---------: |
-| **LOW**	 | **0x76**	       | **V**       |
+| **LOW**	 | **0x76**	       | **✔**       |
 | **HIGH**	| **0x77**	       |             |
 
 #### Grove Connector #1
 
-The sensor connected through Grove Connector #1 should use an I2C address that is distinct from the above I2C addresses, to avoid address conflict. 
+Grove Connector #1 is also connected to the I2C bus. The sensor connected through Grove Connector #1 must use an **I2C address that is distinct** from the above I2C addresses, to avoid address conflict. 
 
 ## Frequently Asked Questions
 
@@ -213,12 +215,12 @@ UnaShield has been thoroughly tested on Arduino Uno R3. However it’s not compa
 #### Arduino Mega / Mega2560
 
 Only the following pins are supported for UART RX in Mega & Mega2560:<br>
-**10, 11, 12, 13, 50, 51, 52, 53, 62, 63, 64, 65, 66, 67, 68, 69**
+- **10, 11, 12, 13, 50, 51, 52, 53, 62, 63, 64, 65, 66, 67, 68, 69**
 
 #### Arduino Leonardo / Micro
 
 Only the following pins are supported for UART RX in Leonardo & Micro:<br>
-**8, 9, 10, 11, 14, 15, 16**
+- **8, 9, 10, 11, 14, 15, 16**
 
 For the users of these incompatible Arduino platforms, perform the two steps below to switch the **UnaShield's UART Receiving Pin (UART-RX)** from **Arduino D5 Pin** to another Arduino pin with UART RX capability.
 
@@ -231,7 +233,7 @@ Connect **UnaShield Pin 5 (UART-RX)** to one of the Arduino pins below with UART
 
 | **DDxn** | **PORTxn** | **PUD (in MCUCR)** | **I/O** | **Pull-Up** | **Comment** |					
 | :------: | :--------: | :----------------: | :-----: | :---------: | :---------: |					
-| **<span style="color: green">0</span>** | **0** | **X** | **INPUT** | **NO** | **HI-Z** |					
+| **<span style="color: lightgreen">0</span>** | **0** | **X** | **INPUT** | **NO** | **HI-Z** |					
 | **0** | **1** | **0** | **INPUT** | **YES** |  |					
 | **0** | **1** | **1** | **INPUT** | **NO** | **HI-Z** |					
 | **1** | **0** | **X** | **OUTPUT** | **NO** | **Output Low** |					
@@ -317,4 +319,3 @@ Global Account Manager
 
 Nicolas.baele@unabiz.com
  
-
