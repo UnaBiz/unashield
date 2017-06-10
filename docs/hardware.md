@@ -1,5 +1,5 @@
  
-# Hardware Manual
+# UnaShield Hardware Guide
 
 Version：V1.0
  
@@ -146,9 +146,9 @@ UnaShield V2S is equipped with two Grove connectors, a standard 4-pin connector 
 
 The power level of onboard Grove connector is alterable between 3V3 and 5V. Choose the most proper power source to the module/device connected by **J204** configuration.
 
-| Grove-VCC Voltage	| Floating	| 5V	 | 3.3V (Default) |
-| ----------------- | :------: | :-: | :------------: |
-| J204 Configuration | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image024.png" width="100"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image026.png" width="100"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image027.png" width="100"> |
+| **Grove-VCC Voltage** 	| **Floating**	| **5V**	 | **3.3V (Default)** |
+| ---------------------- | :----------: | :-----: | :----------------: |
+| **J204 Configuration** | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image024.png" width="100"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image026.png" width="100"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image027.png" width="100"> |
 
 ### (6) LED Indicator & Manual Switches (UnaShield V2/V2S Only)
 
@@ -157,17 +157,17 @@ There are eight onboard LEDs used to show the status of UnaShield operation. The
 #### A. J201 – the switch for LED status of WISOL module (TX, RX, CPU & RF)
 | Indication Function	| Disabled	| Enabled (Default) |
 | ------------------- | -------- | ----------------- |
-| J201 Configuration	 | <img src=https://storage.googleapis.com/unabiz-media/unashield/hardware/image029.png> | <img src=https://storage.googleapis.com/unabiz-media/unashield/hardware/image030.png> |
+| J201 Configuration	 | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image029.png" width="100"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image030.png" width="100"> |
 
 #### B. J202 – the switch for LED status of onboard powers (3V3 & 5V)
 | Indication Function	| Disabled	| Enabled (Default) |
 | ------------------- | -------- | ----------------- |
-| J202 Configuration	 | <img src=https://storage.googleapis.com/unabiz-media/unashield/hardware/image029.png> | <img src=https://storage.googleapis.com/unabiz-media/unashield/hardware/image030.png> |
+| J202 Configuration	 | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image029.png" width="100"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image030.png" width="100"> |
 
 #### C. J203 – the switch for LED status of GPIO Control (D8 & D9)
 | Indication Function	| Disabled	| Enabled (Default) |
 | ------------------- | -------- | ----------------- |
-| J203 Configuration	 | <img src=https://storage.googleapis.com/unabiz-media/unashield/hardware/image029.png> | <img src=https://storage.googleapis.com/unabiz-media/unashield/hardware/image030.png> |
+| J203 Configuration	 | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image029.png" width="100"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image030.png" width="100"> |
 
 ### (7) I2C Interface (UnaShield V2/V2S Only)
 
@@ -176,41 +176,44 @@ I2C interface is a two-wire and bi-directional protocol, which consists of one d
 Not only the two onboard sensors, but also the Grove Connector #1 are connected by a unique and alternative I2C address code by hardware setting. 
 
 #### A. NXP Accelerometer (G-Sensor) – MMA8451Q
-SA0	I2C Address	Default
-LOW	0x1C	V
-HIGH	0x1D	
+| SA0	 | I2C Address	| Default |
+| :--: | :---------: | :-----: |
+| LOW	 | 0x1C	       | V       |
+| HIGH	| 0x1D	       |         |
 
 #### B. BOSCH Temperature/Humidity/Pressure Sensor – BME280
-SD0	I2C Address	Default
-LOW	0x76	V
-HIGH	0x77	
+| SD0	 | I2C Address	| Default |
+| :--: | :---------: | :-----: |
+| LOW	 | 0x76	       | V       |
+| HIGH	| 0x77	       |         |
 
 #### C. Grove Connector #1
-Depending on the sensor connected through the Grove Connector #1, the I2C address should be set to an un-used one to avoid the address confliction. 
+Depending on the sensor connected through the Grove Connector #1, the I2C address should be set to an unused one to avoid address conflict. 
 
 ## Frequently Asked Questions
 
-### (01) Can UnaShield use on all Arduino platforms?
+### (01) Can UnaShield be use on all Arduino platforms?
 
-UnaShield is well-tested on Arduino UNO R3; however, it’s not compatible with all the variants of Arduino boards, because the pin definition difference. Here are two series Arduino platforms suffered from the incompatibility
+UnaShield is well-tested on Arduino Uno R3; however, it’s not compatible with all the variants of Arduino boards, because the pin definition difference. Here are two series Arduino platforms suffered from the incompatibility
 
 #### - Mega & Mega2560
 
-Only the following pins can be used for RX in Mega & Mega2560：<br>
-10, 11, 12, 13, 50, 51, 52, 53, 62, 63, 64, 65, 66, 67, 68, 69
+Only the following pins can be used for **RX in Mega & Mega2560:**<br>
+**10, 11, 12, 13, 50, 51, 52, 53, 62, 63, 64, 65, 66, 67, 68, 69**
 
 #### - Leonardo & Micro
 
-Only the following pins can be used for RX in Leonardo & Micro：<br>
-8, 9, 10, 11, 14, 15, 16
+Only the following pins can be used for **RX in Leonardo & Micro:** <br>
+**8, 9, 10, 11, 14, 15, 16**
 
-For the users of these incompatible Arduino platforms, two-step procedure is recommended to fix the incompatibility by switching the UART receiving pin (UART-RX) from the digital PIN5 to another pin with RX function.
+For the users of these incompatible Arduino platforms, the two steps below are recommended for fixing the incompatibility by switching the **UART receiving pin (UART-RX)** from the **Digital PIN 5** to another pin with RX function.
 
-#### Step1
-Assign the original PIN5 (UART-RX) as an input by the setting marked with color green in the table shown below, even though keep the PIN5 (UART-RX) pin un-connected is fine on Arduino UNO R3.
+#### Step 1
+Assign the original **PIN 5 (UART-RX)** as an input, by choosing a setting marked **Green** in the table shown below. 
+You may keep **PIN 5 (UART-RX)** disconnected on the Arduino Uno R3.
 
-#### Step2
-Connect PIN5 (UART-RX) to one of the pins with receiving function to be the new UART-RX by an external metal wire.
+#### Step 2
+Connect **PIN 5 (UART-RX)** to one of the pins with receiving function, to be the new UART-RX. Use an an external metal wire.
 
 | **DDxn** | **PORTxn** | **PUD (in MCUCR)** | **I/O** | **Pull-Up** | **Comment** |					
 | :----------: | :----------: | :----------: | :----------: | :----------: | :----------: |					
@@ -221,49 +224,56 @@ Connect PIN5 (UART-RX) to one of the pins with receiving function to be the new 
 | **1** | **1** | **X** | **OUTPUT** | **NO** | **Output High** |					
 
 ### (02) Can UnaShield work as a breakout board?
-UnaShield can be the breakout board of the onboard SIGFOX module. Only five pin need to connect, so that the SIGFOX module can be controlled by any external MCU or integrated to any existed system.
+UnaShield can be the breakout board of the onboard SIGFOX module. Only five pins need to connected, so that the SIGFOX module can be controlled by any external MCU (e.g. ARM CPU, Raspberry Pi) or integrated to any existing system.
 
 #### Power Pins：3V3, 5V, GND
 
 #### UART Interface：UART-TX (D4), UART-RX (D5)
 
-Both the 3V3 and 5V UART signaling levels are acceptable. The onboard level-shifting circuit regulates the 5V UART signaling to 3V3, the nominal power level of onboard SIGFOX module. 
+**Both 3V3 and 5V** UART signaling levels are acceptable. The onboard level-shifting circuit regulates the 5V UART signaling to 3V3, which is the nominal power level of the onboard SIGFOX module. 
 
 ### (03) Can the UART Interface be reused?
 
-The D4 & D5 pins are the UART interface on UnaShield, used to communicate with the onboard SIGFOX module. UART interface is dedicated for communication between two terminals only, so D4 & D5 can’t be connected for any other usages.
+The **D4 & D5** pins are used by the **UART interface** on UnaShield, for communicating with the onboard SIGFOX module. 
+
+UART communications is designed for two endpoints only, so D4 & D5 cannot be connected for any other purpose.
 
 ### (04) Can the I2C Interface be reused?
 
-The A4 & A5 pins are the I2C interface on UnaShield, used to communicate with the onboard sensors & the Grove connector #1 as well. 
+The **A4 & A5** pins are the I2C interface on UnaShield, used to communicate with the **onboard sensors** 
+and **Grove connector #1** as well. 
 
-I2C interface works in daisy-chain mode, which means each terminal owns a unique address. The message transmitted with the unique address of the receiver, so that only one of the terminals in the daisy-chain can catch and decode the message. 
+The **I2C interface** works in daisy-chain mode. Each terminal should have a unique I2C address so that they may be connected serially. 
+Every message transmitted on I2C contains the unique I2C address of the receiver, so that only one of the terminals in the daisy-chain can intercept and process the message.
 
-Any I2C device with a unique and distinguishable address can connect to these two pins with parallel connection.
+Any I2C device with a unique and distinguishable address can connect to these two pins simultaneously.
 
-### (05) Can the Grove Connector #2 Interface (A2 & A3) be reused?
+### (05) Can Grove Connector #2 (A2 & A3) be reused?
 
-The A2 & A3 pins are connected to Grove connector #2 for any possible extension via Grove interface. In case the Grove connector #2 is un-used, the A2 & A3 can be reserved for any analog connection.
+The **A2 & A3** pins are connected to **Grove Connector #2** for linking with Grove sensor connected to that port.
+If Grove Connector #2 is not connected to any Grove sensor, then A2 & A3 can be used for other Analog Input/Output connections.
 
 ### (06) Can D8 & D9 be reused?
 
-The D8 & D9 pins are assigned to be the user programmable LED control. Remove the short-jumper on J203 will disable the LED function, and then D8 & D9 will be free for any digital connection. 
+The **D8 & D9 pins** control the **user-programmable LED.** Remove the jumper on **J203** to disable the LED function, and D8 & D9 may be reused for other Digital Input/Output connections. 
 
 ### (08) What's the guideline for deciding if a pin is reusable?
 
+Each pin can only be assigned to one function. The pin may not be reused until the default function of that pin has been deactivated.
 If the same pin is used by two circuits (e.g. UART Interface and Digital Input/Output), 
 the conflict in the electrical signalling will lead to failure of both functions.
-Except the protocol like I2C, which supports daisy-chain connection, each pin can only be assigned to one function. Can’t be reused until the default function has been deactivated.
+
+The only exception is the I2C connection, which supports daisy-chaining of multiple sensors on the same I2C pins.
 
 ### (09) Any limitations on the I/O pins?
 
-UnaShield is a shield for Arduino platform. All the I/O pins derive from the MCU on Arduino platform. Maximal current for each I/O pin is 40mA on Arduino UNO R3.
+UnaShield is designed to run on the Arduino hardware platform. All the I/O pins derive from the MCU on Arduino platform. Maximal current for each I/O pin is **40mA** on Arduino Uno R3.
 
 ### (10) How to activate the UnaShield?
 
 Follow the steps here to activate your UnaShield: (https://bit.ly/unashieldact)[https://bit.ly/unashieldact] 
 
-Each UnaShield activated will get two years of free Sigfox subscription.
+Each UnaShield activated will enjoy two years of free Sigfox subscription.
 
 ### (11) What is the warranty for UnaShield?
 
