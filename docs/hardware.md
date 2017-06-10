@@ -118,25 +118,25 @@ UnaShield is an Arduino Shield with a SIGFOX transceiver module that is compatib
 
 ### 1. SMA Connector
 
-The **SMA (SubMiniature version A) Connector** is used for connecting the coaxial RF antenna. To prevent damage to the onboard SIGFOX module, *always connect the antenna before powering up the UnaShield and before sending any SIGFOX messages.*
+  The **SMA (SubMiniature version A) Connector** is used for connecting the coaxial RF antenna. To prevent damage to the onboard SIGFOX module, *always connect the antenna before powering up the UnaShield and before sending any SIGFOX messages.*
 
 ### 2. SIGFOX Module
 
-UnaShield V1(A) embeds a Radiocrafts SIGFOX module **RC1692HP-SIG,** certified for RCZ2 and RCZ4; UnaShield V2 / V2S uses a WISOL SIGFOX module in the **WSSFM10R Series,** certified for all four RCZs. The SIGFOX modules may be controlled via the **UART interface** with serial terminal commands (similar to the **AT Command Format** used by modems).
+  UnaShield V1(A) embeds a Radiocrafts SIGFOX module **RC1692HP-SIG,** certified for RCZ2 and RCZ4; UnaShield V2 / V2S uses a WISOL SIGFOX module in the **WSSFM10R Series,** certified for all four RCZs. The SIGFOX modules may be controlled via the **UART interface** with serial terminal commands (similar to the **AT Command Format** used by modems).
 
-#### **UnaShield V1A：Radiocrafts RC1692HP-SIG, for RCZ2 and 4**
+  #### **UnaShield V1A：Radiocrafts RC1692HP-SIG, for RCZ2 and 4**
 
-#### **UnaShield V2 / V2S：WISOL WSSFM10R, for all RCZs: RCZ1, 2, 3 and 4**
+  #### **UnaShield V2 / V2S：WISOL WSSFM10R, for all RCZs: RCZ1, 2, 3 and 4**
 
 ### 3. Arduino Uno Standard Header
 
-UnaShield has four Arduino standard headers (pin connectors): one 6-pin header, two 8-pin headers, and one 10-pin header. Not all Arduino pins are used by the UnaShield, some Arduino pins are passed through unmodified by UnaShield.
+  UnaShield has four Arduino standard headers (pin connectors): one 6-pin header, two 8-pin headers, and one 10-pin header. Not all Arduino pins are used by the UnaShield, some Arduino pins are passed through unmodified by UnaShield.
 
-You may use the unused Arduino pins to connect other sensors and components. However take note that the voltage level of Arduino Uno R3 is **5V,** which may not be directly usable by some sensors or components.
+  You may use the unused Arduino pins to connect other sensors and components. However take note that the voltage level of Arduino Uno R3 is **5V,** which may not be directly usable by some sensors or components.
 
-For the details of each Arduino Uno pin assignment and definition, please check the Arduino official website:
+  For the details of each Arduino Uno pin assignment and definition, please check the Arduino official website:
 
-<a href="https://www.arduino.cc/en/Main/ArduinoBoardUno">https://www.arduino.cc/en/Main/ArduinoBoardUno</a>
+  <a href="https://www.arduino.cc/en/Main/ArduinoBoardUno">https://www.arduino.cc/en/Main/ArduinoBoardUno</a>
 
 ### 4. Push Button (UnaShield V2 / V2S only)
 
