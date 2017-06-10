@@ -18,7 +18,7 @@ Version：V1.0
  
 ## About the UnaShield
 
-<kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image022.png" width="300"></kbd> 
+<kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image022.png" width="200"></kbd> 
 
 UnaShield is an Arduino Shield with a SIGFOX transceiver module that is compatible with Arduino UNO and other Arduino-based platform. It uses SIGFOX-certified WISOL or Radiocrafts module for all RCZs (Radio Configuration Zone).
 
@@ -104,7 +104,7 @@ UnaShield is an Arduino Shield with a SIGFOX transceiver module that is compatib
 | **D1** | **NC** | **NC** | **Digital Pin-1** |			
 | **D0** | **NC** | **NC** | **Digital Pin-0** |			
  
-<kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image020.png" width="400"></kbd><br>
+<kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image020.png" width="200"></kbd><br>
 
 - All the pins marked with symbol * are essential for the onboard SIGFOX module. Even though UnaShield is designed on Arduino UNO-R3 platform, it can be integrated to be a standalone SIGFOX module if these essential five pins are properly connected.
 
@@ -148,7 +148,7 @@ The power level of onboard Grove connector is alterable between 3V3 and 5V. Choo
 
 | Grove-VCC Voltage	| Floating	| 5V	| 3.3V (Default) |
 | ----------------- | -------- | -- | -------------- |
-| J204 Configuration | <img src=https://storage.googleapis.com/unabiz-media/unashield/hardware/image025.png> | <img src=https://storage.googleapis.com/unabiz-media/unashield/hardware/image026.png> | <img src=https://storage.googleapis.com/unabiz-media/unashield/hardware/image027.png> |
+| J204 Configuration | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image025.png"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image026.png"> | <img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image027.png"> |
 
 ### (6) LED Indicator & Manual Switches (UnaShield V2/V2S Only)
 
