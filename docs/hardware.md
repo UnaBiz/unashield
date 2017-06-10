@@ -48,19 +48,21 @@ Version：V1.0
 ----- 
 ##  Schematics
 
-<kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image012.png" width="800"></kbd><br>
+*(Click the image to enlarge)*
+
+<a href="https://storage.googleapis.com/unabiz-media/unashield/hardware/image012.png"><kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image012.png" width="800"></kbd></a><br>
 
 **【UnaShield V1A】**
 
 -----
 
-<kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/unashield-v2s-jan-2017.png" width="800"></kbd><br>
+<a href="https://storage.googleapis.com/unabiz-media/unashield/hardware/unashield-v2s-jan-2017.png"><kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/unashield-v2s-jan-2017.png" width="800"></kbd></a><br>
 
 **【UnaShield V2S】20170107**
 
 -----
 
-<kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/unashield-v2s-mar-2017.png" width="800"></kbd><br>
+<a href="https://storage.googleapis.com/unabiz-media/unashield/hardware/unashield-v2s-mar-2017.png"><kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/unashield-v2s-mar-2017.png" width="800"></kbd></a><br>
 
 **【UnaShield V2 / V2S】20170325**
 
