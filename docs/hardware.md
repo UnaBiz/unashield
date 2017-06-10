@@ -45,12 +45,16 @@ UnaShield is an Arduino Shield with a SIGFOX transceiver module that is compatib
 
 ##  Top-View of UnaShields
 
-    [<kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image012.png" width="1024"></kbd>](https://storage.googleapis.com/unabiz-media/unashield/hardware/image012.png)  
+<kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image012.png" width="500"></kbd><br>
 
 【UnaShield_V1A】
- 
+
+<kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image014.png" width="500"></kbd><br>
+
 【UnaShield_V2S】20170107
-  
+
+<kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image016.png" width="500"></kbd><br>
+
 【UnaShield_V2/V2S】20170325
  
 ##  Pin Assignment of UnaShields
