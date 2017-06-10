@@ -105,6 +105,8 @@ Version：V1.0
  
 <kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image020.png" width="400" align="left"></kbd>
 
+<br clear=”left” />
+
 - The five pins marked by `*` are required for proper operation of the onboard SIGFOX module. 
   Even though UnaShield is designed for Arduino Uno R3, the UnaShield can be integrated with another device as a 
   **SIGFOX network adapter** if these essential five pins are properly connected.
