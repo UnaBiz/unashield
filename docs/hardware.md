@@ -103,14 +103,14 @@ Version：V1.0
 | **D1** | **NC** | **NC** | **Digital Pin-1** |			
 | **D0** | **NC** | **NC** | **Digital Pin-0** |			
  
-<kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image020.png" width="400" align="left"></kbd>
-<p>
+<kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image020.png" width="400" align="right"></kbd>
+
 - The five pins marked by `*` are required for proper operation of the onboard SIGFOX module. 
   Even though UnaShield is designed for Arduino Uno R3, the UnaShield can be integrated with another device as a 
   **SIGFOX network adapter** if these essential five pins are properly connected.
 
 - The onboard SIGFOX module works with **DC 3V3 power.** All the Arduino pins used by the UnaShield are connected to a **level-shifter** to ensure that the pin voltage is always fixed at 3V3.
-</p>
+
 <br><br><br>
 ----- 
 <kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image008.png" width="200" align="right"></kbd>
