@@ -5,6 +5,8 @@ logo: "https://storage.googleapis.com/unabiz-media/unashield/hardware/unashield-
 google_analytics: [UA-89065364-4]
 
 gems:
+  - jekyll-sitemap
+  - jekyll-seo-tag
   - jekyll-menus
   - jekyll-assets
   - jekyll-pdf

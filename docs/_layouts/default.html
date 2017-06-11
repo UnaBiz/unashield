@@ -20,13 +20,13 @@
       #header nav img.logo { float: left; margin-left: -20px; margin-top: -5px; }
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
+    {% seo %}
   </head>
   <body>
       <div id="header">
         <nav>
           <!--  Logo  -->
-          <a href="/unashield">
+          <a href="{{ '/' | relative_url }}">
             <!-- <img src="{{ site.logo }}" height="64" /> -->
             <img class="logo" src="https://storage.googleapis.com/unabiz-media/unashield/hardware/unashield-logo.png" height="64" />
           </a>
