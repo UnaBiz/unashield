@@ -1,9 +1,10 @@
 theme: jekyll-theme-midnight
-title: [UnaShield Docs]
+title: [UnaShield]
 description: [Developer and hardware docs for the UnaShield Sigfox Shield for Arduino]
 google_analytics: [UA-89065364-4]
 
 gems:
+  - jekyll-menus
   - jekyll-assets
   - jekyll-pdf
 exclude:

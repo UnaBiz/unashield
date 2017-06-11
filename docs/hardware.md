@@ -1,5 +1,8 @@
 ---
 title: "UnaShield Hardware Guide"
+menus:
+  header:
+    title: "Hardware Guide"
 # pdf: true
 ---
  

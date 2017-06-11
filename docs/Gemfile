@@ -1,7 +1,12 @@
+source 'https://rubygems.org'
+
 # For previewing pages.
 gem "github-pages", group: :jekyll_plugins
 
 group :jekyll_plugins do
+  # Navigation menu.
+  gem "jekyll-menus"
+
   # For generating PDF.
   gem "jekyll-assets"
   gem "jekyll-pdf"

@@ -1,5 +1,8 @@
 ---
-title: "UnaShield Developer's Guide"
+title: "UnaShield Developer Guide"
+menus:
+  header:
+    title: "Developer Guide"
 ---
 
 ## About UnaShield
