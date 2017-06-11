@@ -1,6 +1,6 @@
 ---
 title: "UnaShield Hardware Guide"
-pdf: true
+# pdf: true
 ---
  
 Version v1.0
