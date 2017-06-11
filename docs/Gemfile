@@ -2,5 +2,5 @@
 gem "github-pages", group: :jekyll_plugins
 
 # For generating PDF.
-gem "jekyll-assets"
-gem "jekyll-pdf"
+gem "jekyll-assets", group: :jekyll_plugins
+gem "jekyll-pdf", group: :jekyll_plugins
