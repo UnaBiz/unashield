@@ -1,0 +1,6 @@
+# For previewing pages.
+gem "github-pages", group: :jekyll_plugins
+
+# For generating PDF.
+gem "jekyll-assets"
+gem "jekyll-pdf"
