@@ -1,13 +1,12 @@
 ---
-title:  "UnaShield Hardware Guide"
+title: "UnaShield Hardware Guide"
 pdf: true
 ---
  
-# UnaShield Hardware Guide
-
-Version：V1.0
+Version v1.0
  
-## Contents
+## Contents 
+<br>
 
   About the UnaShield
   
