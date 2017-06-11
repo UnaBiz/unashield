@@ -1,5 +1,5 @@
 ---
-title: [UnaShield Developer's Guide]
+title: "UnaShield Developer's Guide"
 ---
 
 # UnaShield Developer's Guide
