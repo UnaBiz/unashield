@@ -1,5 +1,5 @@
 theme: jekyll-theme-midnight
 title: [UnaShield Docs]
 description: [Developer and hardware docs for the UnaShield Sigfox Shield for Arduino]
-show_downloads: [true]
+show_downloads: [false]
 google_analytics: [UA-89065364-4]
