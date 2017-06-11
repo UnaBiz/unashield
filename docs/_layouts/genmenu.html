@@ -1,12 +1,6 @@
-{% comment %}
-  Generate the site menu created by jekyll-menus.
-  # {% for menu in site.menus %}
-  # {{ menu.identifier }}
-  # title: "{{ menu.title }}"
-  # url: "{{ menu.url }}"
-{% endcomment %}
-{% for item in site.menus.headers %}
-{{ item.identifier }}
+# Generate the site menu created by jekyll-menus.
+{% for item in site.menus.header %}
+- identifier: "{{ item.identifier }}"
   title: "{{ item.title }}"
   url: "{{ item.url }}"
 {% endfor %}

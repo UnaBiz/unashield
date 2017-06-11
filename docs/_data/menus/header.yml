@@ -1,0 +1,10 @@
+# Generate the site menu created by jekyll-menus.
+
+- identifier: "hardware"
+  title: "Hardware Guide"
+  url: "/hardware.html"
+
+- identifier: "index"
+  title: "Developer Guide"
+  url: "/"
+
