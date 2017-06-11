@@ -24,7 +24,7 @@ Version v1.0
 ----- 
 ## About the UnaShield
 
-<kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image022.png" width="200" align="right"></kbd>UnaShield is an Arduino Shield with a SIGFOX transceiver module that is compatible with Arduino Uno R3 and other Arduino-based development boards. It uses SIGFOX-certified WISOL or Radiocrafts modules to support all RCZs (Radio Configuration Zones).
+<kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image022.png" width="200" align="right"></kbd>UnaShield is an Arduino Shield with a Sigfox transceiver module that is compatible with Arduino Uno R3 and other Arduino-based development boards. It uses Sigfox-certified WISOL or Radiocrafts modules to support all RCZs (Radio Configuration Zones).
 
 - **RCZ1:** Europe, Oman, South Africa
 
@@ -36,9 +36,9 @@ Version v1.0
 
 | **Features** |  | **V1A (20161128)** | **V2 (20170325)** | **V2S (20170107)** | **V2S (20170325)** |					
 | :---------- | :---------- | :----------: | :----------: | :----------: | :----------: |					
-| **SIGFOX Module** | **Radiocrafts RC1692HP-SIG** | **✔** |  |  |  |					
+| **Sigfox Module** | **Radiocrafts RC1692HP-SIG** | **✔** |  |  |  |					
 |  | **WISOL WSSFM10R** |  | **✔** | **✔** | **✔** |					
-|  | **SIGFOX RCZ** | **2 / 4** | **1 / 2 / 3 / 4** | **1 / 2 / 3 / 4** | **1 / 2 / 3 / 4** |					
+|  | **Sigfox RCZ** | **2 / 4** | **1 / 2 / 3 / 4** | **1 / 2 / 3 / 4** | **1 / 2 / 3 / 4** |					
 | **Sensor** | **Accelerometer (MMA8451Q)** |  |  | **✔** | **✔** |					
 |  | **Temperature Sensor (BME280)** |  |  | **✔** | **✔** |					
 |  | **Humidity Sensor (BME280)** |  |  | **✔** | **✔** |					
@@ -80,7 +80,7 @@ Version v1.0
 | :----------: | :----------: | :----------: | :---------- |			
 | **Reserved** | **NC** | **NC** | **Reserved** |			
 | **IOREF** | **5V** | **5V** | **5V Power Source from Arduino platform** |			
-| **RESET** | **RESET** | **RESET** | **Reset Arduino MCU & SIGFOX Module；Low active** |			
+| **RESET** | **RESET** | **RESET** | **Reset Arduino MCU & Sigfox Module；Low active** |			
 | **3V3** | **3V3** | **3V3** | **3V3 Power Source from Arduino platform** |			
 | **5V** | **5V** | **5V** | **5V Power Source from Arduino platform** |			
 | **GND** | **GND** | **GND** | **Grounding & power/signal reference level** |			
@@ -115,13 +115,13 @@ Version v1.0
 
 <br><br><br>
 
-- The five pins marked by `*` are required for proper operation of the onboard SIGFOX module. 
+- The five pins marked by `*` are required for proper operation of the onboard Sigfox module. 
   Even though UnaShield is designed for Arduino Uno R3, the UnaShield can be integrated with another device as a 
-  **SIGFOX network adapter** if these essential five pins are properly connected.
+  **Sigfox network adapter** if these essential five pins are properly connected.
 
 <br>
 
-- The onboard SIGFOX module works with **DC 3V3 power.** All the Arduino pins used by the UnaShield are connected to a **level-shifter** to ensure that the pin voltage is always fixed at 3V3.
+- The onboard Sigfox module works with **DC 3V3 power.** All the Arduino pins used by the UnaShield are connected to a **level-shifter** to ensure that the pin voltage is always fixed at 3V3.
 
 <br><br><br>
 
@@ -132,12 +132,12 @@ Version v1.0
 
 The **SMA (SubMiniature version A) Connector** is used for connecting the provided coaxial RF antenna to the UnaShield. 
 
-To prevent damage to the onboard SIGFOX module, *always connect the antenna before powering up the UnaShield and before sending any SIGFOX messages.*
+To prevent damage to the onboard Sigfox module, *always connect the antenna before powering up the UnaShield and before sending any Sigfox messages.*
 
 -----
-### 2. SIGFOX Module
+### 2. Sigfox Module
 
-UnaShield V1(A) embeds a Radiocrafts SIGFOX module **RC1692HP-SIG,** certified for RCZ2 and RCZ4; UnaShield V2 / V2S uses a WISOL SIGFOX module in the **WSSFM10R Series,** certified for all four RCZs. The SIGFOX modules may be controlled via the **UART interface** with serial terminal commands (similar to the **AT Command Format** used by modems).
+UnaShield V1(A) embeds a Radiocrafts Sigfox module **RC1692HP-SIG,** certified for RCZ2 and RCZ4; UnaShield V2 / V2S uses a WISOL Sigfox module in the **WSSFM10R Series,** certified for all four RCZs. The Sigfox modules may be controlled via the **UART interface** with serial terminal commands (similar to the **AT Command Format** used by modems).
 
 **UnaShield V1A** | **UnaShield V2 / V2S**
 :---------------: | :---------------------:
@@ -260,7 +260,7 @@ Connect **UnaShield Pin 5 (UART-RX)** to one of the Arduino pins below with UART
 | **1** | **1** | **X** | **OUTPUT** | **NO** | **Output High** |					
 
 ### *Can UnaShield work as a breakout board?*
-UnaShield can be the breakout board of the onboard SIGFOX module. **Only five pins need to connected,** so that the SIGFOX module can be controlled by any external MCU (e.g. ARM CPU, Raspberry Pi) or integrated to any existing system.
+UnaShield can be the breakout board of the onboard Sigfox module. **Only five pins need to connected,** so that the Sigfox module can be controlled by any external MCU (e.g. ARM CPU, Raspberry Pi) or integrated to any existing system.
 
 | **Power Pins:** | **UART Interface:** |
 | :-------------: | :-----------------: |
@@ -268,11 +268,11 @@ UnaShield can be the breakout board of the onboard SIGFOX module. **Only five pi
 | - **5V**        | - **UART-RX (D5)**  |
 | - **GND**       |                     |
 
-Both 3V3 and 5V UART signaling levels are accepted. The UnaShield's level-shifting circuit regulates the 5V UART signaling to 3V3, which is the nominal power level of the onboard SIGFOX module. 
+Both 3V3 and 5V UART signaling levels are accepted. The UnaShield's level-shifting circuit regulates the 5V UART signaling to 3V3, which is the nominal power level of the onboard Sigfox module. 
 
 ### *Can the UART Interface be reused?*
 
-The **Arduino D4, D5** pins are used by the **UART interface** on UnaShield, for communicating with the onboard SIGFOX module. 
+The **Arduino D4, D5** pins are used by the **UART interface** on UnaShield, for communicating with the onboard Sigfox module. 
 
 UART communications is designed for two endpoints only, so D4, D5 cannot be connected for any other purpose.
 
