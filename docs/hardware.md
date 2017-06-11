@@ -111,7 +111,7 @@ Version v1.0
 | **D1** | **NC** | **NC** | **Digital Pin-1** |			
 | **D0** | **NC** | **NC** | **Digital Pin-0** |			
  
-<kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image020.png" width="400" align="right"></kbd>
+<kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/unashield-pins.png" width="400" align="right"></kbd>
 
 <br><br><br>
 
