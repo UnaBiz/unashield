@@ -1,8 +1,8 @@
 theme: jekyll-theme-midnight
-title: [UnaShield]
-description: [Developer and hardware docs for the UnaShield Sigfox Shield for Arduino]
+title: "UnaShield"
+description: "Developer and hardware docs for the UnaShield Sigfox Shield for Arduino"
 logo: "https://storage.googleapis.com/unabiz-media/unashield/hardware/unashield-logo.png"
-google_analytics: [UA-89065364-4]
+google_analytics: "UA-89065364-4"
 
 gems:
   - jekyll-sitemap
