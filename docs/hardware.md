@@ -24,6 +24,7 @@ Version v1.0
 ----- 
 ## About the UnaShield
 
+{% capture site.common.about_unashield %}
 <kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image022.png" width="200" align="right"></kbd>UnaShield is an Arduino Shield with a Sigfox transceiver module that is compatible with Arduino Uno R3 and other Arduino-based development boards. It uses Sigfox-certified WISOL or Radiocrafts modules to support all RCZs (Radio Configuration Zones).
 
 - **RCZ1:** Europe, Iran, Oman, South Africa
@@ -33,6 +34,7 @@ Version v1.0
 - **RCZ3:** Japan
 
 - **RCZ4:** Argentina, Australia, Colombia, Hong Kong, New Zealand, Singapore, Taiwan
+{% endcapture %}
 
 | **Features** |  | **V1A (20161128)** | **V2 (20170325)** | **V2S (20170107)** | **V2S (20170325)** |					
 | :---------- | :---------- | :----------: | :----------: | :----------: | :----------: |					
@@ -232,6 +234,7 @@ Grove Connector #1 is also connected to the I2C bus. The sensor or component con
 -----
 ## Frequently Asked Questions
 
+<span id="link-hardware-unashield-compatibility" />
 ### *Can the UnaShield be used on all Arduino boards?*
 
 UnaShield has been thoroughly tested on Arduino Uno R3. However it’s not compatible with all variants of Arduino boards, due to the different pin definitions. Here two classes of Arduino boards that are incompatible with the UnaShield due to the pin definitions:
@@ -327,6 +330,8 @@ The UnaShield Arduino library and sample codes for the may be downloaded at
 
 <a href="https://bit.ly/unashield">https://bit.ly/unashield</a>
 
+-----
+
 ## Getting the UnaShield
 
 To order the UnaShield, please contact <a href="http://www.unabiz.com">UnaBiz</a>:
@@ -346,4 +351,3 @@ Mr. Nicolas Baele
 Global Account Manager
 
 Nicolas.baele@unabiz.com
- 
