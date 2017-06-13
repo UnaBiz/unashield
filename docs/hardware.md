@@ -39,20 +39,20 @@ Version v1.0
 
 | **Features** |  | **V1A (20161128)** | **V2 (20170325)** | **V2S (20170107)** | **V2S (20170325)** |					
 | :---------- | :---------- | :----------: | :----------: | :----------: | :----------: |					
-| **Sigfox Module** | **Radiocrafts RC1692HP-SIG** | **✔** |  |  |  |					
-|  | **WISOL WSSFM10R** |  | **✔** | **✔** | **✔** |					
+| **Sigfox Module** | **Radiocrafts RC1692HP-SIG** | **<span class="green">✔</span>** |  |  |  |					
+|  | **WISOL WSSFM10R** |  | **<span class="green">✔</span>** | **<span class="green">✔</span>** | **<span class="green">✔</span>** |					
 |  | **Sigfox RCZ** | **2 / 4** | **1 / 2 / 3 / 4** | **1 / 2 / 3 / 4** | **1 / 2 / 3 / 4** |					
-| **Sensor** | **Accelerometer (MMA8451Q)** |  |  | **✔** | **✔** |					
-|  | **Temperature Sensor (BME280)** |  |  | **✔** | **✔** |					
-|  | **Humidity Sensor (BME280)** |  |  | **✔** | **✔** |					
-|  | **Pressure Sensor (BME280)** |  |  | **✔** | **✔** |					
-|  | **Push Button** |  | **✔** | **✔** | **✔** |					
-| **Peripheral Connection** | **Digital Grove (I2C)** |  | **✔** | **✔** | **✔** |					
-|  | **Analog Grove** |  | **✔** | **✔** | **✔** |					
-| **LED** | **Power Indication** | **✔** | **✔** | **✔** | **✔** |					
-|  | **General Indication** |  | **✔** | **✔** | **✔** |					
-|  | **Module Status Monitor** |  | **✔** | **✔** | **✔** |					
-| **Antenna** | **Matching Circuit** |  | **✔** |  | **✔** |					
+| **Sensor** | **Accelerometer (MMA8451Q)** |  |  | **<span class="green">✔</span>** | **<span class="green">✔</span>** |					
+|  | **Temperature Sensor (BME280)** |  |  | **<span class="green">✔</span>** | **<span class="green">✔</span>** |					
+|  | **Humidity Sensor (BME280)** |  |  | **<span class="green">✔</span>** | **<span class="green">✔</span>** |					
+|  | **Pressure Sensor (BME280)** |  |  | **<span class="green">✔</span>** | **<span class="green">✔</span>** |					
+|  | **Push Button** |  | **<span class="green">✔</span>** | **<span class="green">✔</span>** | **<span class="green">✔</span>** |					
+| **Peripheral Connection** | **Digital Grove (I2C)** |  | **<span class="green">✔</span>** | **<span class="green">✔</span>** | **<span class="green">✔</span>** |					
+|  | **Analog Grove** |  | **<span class="green">✔</span>** | **<span class="green">✔</span>** | **<span class="green">✔</span>** |					
+| **LED** | **Power Indication** | **<span class="green">✔</span>** | **<span class="green">✔</span>** | **<span class="green">✔</span>** | **<span class="green">✔</span>** |					
+|  | **General Indication** |  | **<span class="green">✔</span>** | **<span class="green">✔</span>** | **<span class="green">✔</span>** |					
+|  | **Module Status Monitor** |  | **<span class="green">✔</span>** | **<span class="green">✔</span>** | **<span class="green">✔</span>** |					
+| **Antenna** | **Matching Circuit** |  | **<span class="green">✔</span>** |  | **<span class="green">✔</span>** |					
 
 ----- 
 ##  Schematics
@@ -218,14 +218,14 @@ The **UnaShield accelerometer sensor** and **temperature / humidity / pressure s
 
 | **SA0**	 | **I2C Address**	| **Default** |
 | :------: | :-------------: | :---------: |
-| **LOW**	 | **0x1C**	       | **✔**       |
+| **LOW**	 | **0x1C**	       | **<span class="green">✔</span>**       |
 | **HIGH**	| **0x1D**	       |             |
 
 #### **BOSCH Temperature / Humidity / Pressure Sensor – BME280**
 
 | **SD0**	 | **I2C Address**	| **Default** |
 | :------: | :-------------: | :---------: |
-| **LOW**	 | **0x76**	       | **✔**       |
+| **LOW**	 | **0x76**	       | **<span class="green">✔</span>**       |
 | **HIGH**	| **0x77**	       |             |
 
 #### **Grove Connector #1**
