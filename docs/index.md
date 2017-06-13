@@ -7,30 +7,29 @@ menus:
 
 ## About UnaShield
 
-<img src="https://storage.googleapis.com/unabiz-media/unabiz-arduino/unashieldv2s-full.jpg" width="500" border="5">
-<br>
-*UnaShield V2S*
+<kbd><img src="https://storage.googleapis.com/unabiz-media/unashield/hardware/image022.png" width="200" align="right"></kbd>UnaShield is an Arduino Shield with a Sigfox transceiver module that is compatible with Arduino Uno R3 and other Arduino-based development boards. It uses Sigfox-certified WISOL or Radiocrafts modules to support all RCZs (Radio Configuration Zones).
 
-UnaShield is an Arduino Shield with a SIGFOX transceiver module that is compatible with Arduino Uno and other Arduino-based boards. It uses the Wisol or Radiocrafts module certified for all Sigfox Zones:
+- **RCZ1:** Europe, Iran, Oman, South Africa
 
-* **Zone 1 (RCZ1):** Europe, South Africa
-* **Zone 2 (RCZ2):** North America
-* **Zone 3 (RCZ3):** Japan
-* **Zone 4 (RCZ4):** Australia, Hong Kong, Singapore, New Zealand, South America, Taiwan
+- **RCZ2:** Brazil, Mexico, USA  
+
+- **RCZ3:** Japan
+
+- **RCZ4:** Argentina, Australia, Colombia, Hong Kong, New Zealand, Singapore, Taiwan
 
 There are 2 versions of the UnaShield:
 
-* **UnaShield V2S:** Based on Sigfox module by Wisol.  Includes onboard sensors for temperature, humidity, air pressure, accelerometer and two ports for connecting Grove sensors.<br>
-  **[UnaShield V2S Specifications](https://storage.googleapis.com/unabiz-media/unabiz-arduino/About%20the%20UnaShield_V2S_20170205.pdf)**<br>
-  **[Usable pins for UnaShield V2S](https://github.com/UnaBiz/unabiz-arduino/wiki/Usable-pins-for-UnaShield-V2S)**<br>
+* **UnaShield V2S:** Based on Sigfox module by WISOL.  Includes onboard sensors for temperature, humidity, air pressure, accelerometer and two ports for connecting Grove sensors.<br>
 
 * **UnaShield V1:** Based on Sigfox module by Radiocrafts.<br>
-  **[UnaShield V1 Specifications](https://storage.googleapis.com/unabiz-media/unabiz-arduino/About%20the%20UnaShield_V1A_20161222.pdf)**
+
+For hardware specifications please refer to the UnaShield Hardware Guide:
+[https://unabiz.github.io/unashield/hardware](https://unabiz.github.io/unashield/hardware)
 
 The UnaBiz team has built an Arduino library for the UnaShield, the source code may be found here: 
 [https://github.com/UnaBiz/unabiz-arduino](https://github.com/UnaBiz/unabiz-arduino)
 
-This page explains how to use the Arduino library to send SIGFOX messages with the UnaShield.
+This page explains how to use the Arduino library to send Sigfox messages with the UnaShield.
 
 ## Getting the UnaShield
 
@@ -57,7 +56,7 @@ The UnaShield is covered by a 3-month warranty, one-for-one exchange. Proof of p
 
 To activate the UnaShield and get access to Sigfox Backend, please refer to
 
-https://github.com/UnaBiz/unabiz-arduino/wiki/Activation
+[https://github.com/UnaBiz/unabiz-arduino/wiki/Activation](https://github.com/UnaBiz/unabiz-arduino/wiki/Activation)
 
 ## Installing the unabiz-arduino library
 
@@ -65,7 +64,7 @@ To install the unabiz-arduino library for sending SIGFOX messages:
 
 1. Install the latest Arduino Integrated Development Environment (IDE) from https://www.arduino.cc/en/Main/Software
 
-1. Browse to https://github.com/UnaBiz/unabiz-arduino
+1. Browse to [https://github.com/UnaBiz/unabiz-arduino](https://github.com/UnaBiz/unabiz-arduino)
 
 1. Click **Clone Or Download** then **Download ZIP**
 
@@ -75,7 +74,8 @@ To install the unabiz-arduino library for sending SIGFOX messages:
 
 1. Select the downloaded zip file.  After the installation you should see unabiz-arduino or unabiz-arduino-master when you click **File** → **Examples**.
 
-More details on installing Arduino libraries: https://www.arduino.cc/en/Guide/Libraries
+More details on installing Arduino libraries: 
+[https://www.arduino.cc/en/Guide/Libraries](https://www.arduino.cc/en/Guide/Libraries)
 
 ## Sample sketch for UnaShield
 
@@ -206,7 +206,7 @@ The Structured Message Format is described below.
 
 The **Sigfox Backend Portal** enables us to view the messages received by Sigfox from the UnaShield.
 
-Log on to the Sigfox Backend Portal at **http://backend.sigfox.com/**
+Log on to the Sigfox Backend Portal at **[http://backend.sigfox.com](http://backend.sigfox.com)**
 
 <kbd><img src="https://storage.googleapis.com/unabiz-media/unabiz-arduino/sigfox-messages.png" width="500"></kbd>
 
@@ -292,7 +292,7 @@ This article explains the pins on the UnaShield that should be connected for pro
 
 Also check these articles for compatibility information:
 
-- [Arduino Mega / Leonardo / Micro](https://github.com/UnaBiz/unabiz-arduino/wiki/Compatibility:-Arduino-Mega,-Leonardo,-Micro)
+- [Arduino Mega / Leonardo / Micro](https://unabiz.github.io/unashield/hardware)
 
 ## Format of structured message
 
