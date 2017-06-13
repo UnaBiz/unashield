@@ -60,17 +60,18 @@ To activate the UnaShield and get access to Sigfox Backend, please refer to
 
 ## Installing the unabiz-arduino library
 
-To install the unabiz-arduino library for sending SIGFOX messages:
+To install the unabiz-arduino library for sending Sigfox messages:
 
-1. Install the latest Arduino Integrated Development Environment (IDE) from https://www.arduino.cc/en/Main/Software
+1. Install the latest Arduino Integrated Development Environment (IDE) from 
+[https://www.arduino.cc/en/Main/Software](https://www.arduino.cc/en/Main/Software)
 
 1. Browse to [https://github.com/UnaBiz/unabiz-arduino](https://github.com/UnaBiz/unabiz-arduino)
 
-1. Click **Clone Or Download** then **Download ZIP**
+1. Click **"Clone Or Download"** then **"Download ZIP"**
 
    <kbd><img src="https://storage.googleapis.com/unabiz-media/unabiz-arduino/github-download.png" width="500"></kbd>
 
-1. Launch the Arduino integrated development environment. Click **Sketch** → **Include Library** → **Add .ZIP Library**
+1. Launch the Arduino integrated development environment. Click **"Sketch"** → **"Include Library"** → **"Add .ZIP Library"**
 
 1. Select the downloaded zip file.  After the installation you should see unabiz-arduino or unabiz-arduino-master when you click **File** → **Examples**.
 
@@ -79,7 +80,7 @@ More details on installing Arduino libraries:
 
 ## Sample sketch for UnaShield
 
-Refer to this sample Arduino sketch for sending SIGFOX messages:
+Refer to this sample Arduino sketch for sending Sigfox messages:
 
 **For UnaShield V1:**<br>
 <span style="font-size: smaller">[https://github.com/UnaBiz/unabiz-arduino/blob/master/examples/DemoTestUnaShieldV1/DemoTestUnaShieldV1.ino](https://github.com/UnaBiz/unabiz-arduino/blob/master/examples/DemoTestUnaShieldV1/DemoTestUnaShieldV1.ino)</span>
@@ -91,31 +92,31 @@ The sample sketch may also be found in the Arduino integrated development enviro
 
 ## Declaring the transceiver
 
-To declare a transceiver object for sending SIGFOX messages:
+To declare a transceiver object for sending Sigfox messages:
 
 {% highlight c++ linenos %}
 #include "SIGFOX.h"                         //  Include the unabiz-arduino library.
 static const String device = "g88pi";       //  Set this to your device name if you're using UnaBiz Emulator.
 static const bool useEmulator = false;      //  Set to true if using UnaBiz Emulator.
-static const bool echo = true;              //  Set to true if the SIGFOX library should display the executed commands.
-static const Country country = COUNTRY_SG;  //  Set this to your country to configure the SIGFOX transmission frequencies.
+static const bool echo = true;              //  Set to true if the Sigfox library should display the executed commands.
+static const Country country = COUNTRY_SG;  //  Set this to your country to configure the Sigfox transmission frequencies.
 static UnaShieldV2S transceiver(country, useEmulator, device, echo);
 {% endhighlight %}
 
 If you're using UnaShield V1, change UnaShieldV2S to UnaShieldV1.
 
-Change COUNTRY_SG to your country code (e.g. COUNTRY_AU, COUNTRY_NZ). This sets the transceiver object to use the SIGFOX frequencies for your country.
+Change COUNTRY_SG to your country code (e.g. COUNTRY_AU, COUNTRY_NZ). This sets the transceiver object to use the Sigfox frequencies for your country.
 
 useEmulator should always be set to false.
 
-The following sections explain how to use the transceiver.sendMessage method to send a raw SIGFOX message, and the Message class to send a structured message.
+The following sections explain how to use the transceiver.sendMessage method to send a raw Sigfox message, and the Message class to send a structured message.
 
 ## Initialising the transceiver
 
 Initialise the transceiver object in the setup function before sending any messages:
 
 {% highlight c++ linenos %}
-if (!transceiver.begin()) stop(F("Unable to init SIGFOX module, may be missing"));
+if (!transceiver.begin()) stop(F("Unable to init Sigfox module, may be missing"));
 {% endhighlight %}
 
 The message "Unable to init..." is displayed if the transceiver could not be initialised, e.g. when the UnaShield is not connected to the Arduino board.  The F(...) function stores the message string into flash memory instead of highly-limited static RAM, to support larger Arduino sketches.
@@ -129,9 +130,9 @@ transceiver.sendMessage("0102030405060708090a0b0c");  //  Send raw message.
 delay(10000);                                         //  Wait 10 seconds.
 {% endhighlight %}
 
-This sends a SIGFOX message containing the bytes "0x01 0x02 0x03 0x04 0x05 0x06 0x07 0x08 0x09 0x0a 0x0b 0x0c".
+This sends a Sigfox message containing the bytes "0x01 0x02 0x03 0x04 0x05 0x06 0x07 0x08 0x09 0x0a 0x0b 0x0c".
 
-Note that we may not send two messages within 10 seconds due to the SIGFOX rate limit.  Each SIGFOX device may send up to 140 messages within a 24-hour period.
+Note that we may not send two messages within 10 seconds due to the Sigfox rate limit.  Each Sigfox device may send up to 140 messages within a 24-hour period.
 
 ## Sending a text message
 
@@ -142,7 +143,7 @@ transceiver.sendString("123456789abc");  //  Send text message.
 delay(10000);                            //  Wait 10 seconds.
 {% endhighlight %}
 
-This sends a SIGFOX message containing the bytes 0x31 0x32 0x33 0x34 0x35 0x36 0x37 0x38 0x39 0x61 0x62 0x63. This is equivalent to calling:
+This sends a Sigfox message containing the bytes 0x31 0x32 0x33 0x34 0x35 0x36 0x37 0x38 0x39 0x61 0x62 0x63. This is equivalent to calling:
 
 {% highlight c++ linenos %}
 transceiver.sendMessage("313233343536373839616263");  //  Send raw message.
@@ -163,7 +164,7 @@ transceiver.sendMessage(encode3);  //  Send the 12-byte message "313233343536373
 
 ## Sending a structured message
 
-The unabiz-arduino library includes a Message class that allows us to send structured messages containing up to 3 data fields, packed into a 12-byte SIGFOX message.  The Message class is used like this:
+The unabiz-arduino library includes a Message class that allows us to send structured messages containing up to 3 data fields, packed into a 12-byte Sigfox message.  The Message class is used like this:
 
 {% highlight c++ linenos %}
   Message msg(transceiver);          //  Will contain the structured sensor data.
@@ -250,17 +251,17 @@ The following Arduino sketches show how we may access the other sensors on the U
 
   [https://github.com/UnaBiz/unabiz-arduino/tree/master/examples/grove-sensor](https://github.com/UnaBiz/unabiz-arduino/tree/master/examples/grove-sensor)
 
-## Getting the SIGFOX Device ID and PAC (Porting Authorization Code)
+## Getting the Sigfox Device ID and PAC (Porting Authorization Code)
 
-When the above demo code runs, the Arduino Serial Monitor will show the SIGFOX Device ID and PAC like this:
+When the above demo code runs, the Arduino Serial Monitor will show the Sigfox Device ID and PAC like this:
 
 {% highlight linenos %}
  - Wisol.getID: returned id=002BEDB4, pac=C53D6575A5DA0000
- - SIGFOX ID = 002BEDB4
+ - Sigfox ID = 002BEDB4
  - PAC = C53D6575A5DA0000
 {% endhighlight %}
 
-The Device ID and PAC will be used to activate the UnaShield with the SIGFOX Operator. Note that the PAC is only valid for one use only.  Once a device has been activated with the PAC, the device cannot be activated again on a different SIGFOX Operator with the same PAC.
+The Device ID and PAC will be used to activate the UnaShield with the Sigfox Operator. Note that the PAC is only valid for one use only.  Once a device has been activated with the PAC, the device cannot be activated again on a different Sigfox Operator with the same PAC.
 
 ## Support for LightBlue Bean+
 
@@ -280,7 +281,7 @@ The **[LightBlue Bean+ by Punch Through](https://punchthrough.com/bean)** is a t
 
 0. And **Bluetooth 4.0,** supporting **iBeacon and Arduino flashing / log access over Bluetooth**
 
-By adding the UnaShield to the Bean+, you create a self-powered sensing device that can send sensor data to the SIGFOX cloud for ***many days on a single charge***
+By adding the UnaShield to the Bean+, you create a self-powered sensing device that can send sensor data to the Sigfox cloud for ***many days on a single charge***
 
 Check out [https://github.com/UnaBiz/unabiz-arduino/wiki/Bean](https://github.com/UnaBiz/unabiz-arduino/wiki/Bean)
 
@@ -296,7 +297,7 @@ Also check these articles for compatibility information:
 
 ## Format of structured message
 
-The structured message format was created such that all 12 bytes in a SIGFOX message could be used to transmit 3 fields efficiently, including a 3-letter field name (e.g. ctr).  The field name was included so that any generic IoT platform (e.g. Amazon Web Services IoT) could decode the fields and refer to the fields by name for IoT rules, alerts, dashboards and other types of IoT data processing.
+The structured message format was created such that all 12 bytes in a Sigfox message could be used to transmit 3 fields efficiently, including a 3-letter field name (e.g. ctr).  The field name was included so that any generic IoT platform (e.g. Amazon Web Services IoT) could decode the fields and refer to the fields by name for IoT rules, alerts, dashboards and other types of IoT data processing.
 
 * Each structured message contains 1 to 3 data fields of 4 bytes each:
 
