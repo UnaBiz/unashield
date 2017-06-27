@@ -248,6 +248,8 @@ UnaShield has been thoroughly tested on Arduino Uno R3. However it’s not compa
 
 If you are using one of these Arduino boards, perform the two steps below to switch the **UnaShield's UART Receiving Pin (UART-RX)** from **Arduino D5 Pin** to another Arduino pin with UART RX capability.
 
+Note that **Arduino D5, D6 Pins** are **High Impedence (HI-Z)**.  The replacement pins should also be HI-Z pins, as indicated in the table below.
+
 #### Step 1
 Assign the original **UnaShield Pin 5 (UART-RX)** as an input, by choosing a setting marked **<span style="color: lime">Green</span>** in the table below. 
 You may keep **UnaShield Pin 5 (UART-RX)** disconnected on the Arduino Uno R3.
