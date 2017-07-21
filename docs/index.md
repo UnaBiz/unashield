@@ -184,12 +184,7 @@ Each addField(name, value) method adds a data field to the message:
 
 * value: Value of data field of type int, float or String (up to 3 characters)
 
-This transmits an encoded message that looks like 920e5a00b051680194597b00.  The 12-byte encoded message contains the field names ctr, tmp, vlt as well as the field values.
-
-## Getting the downlink response from Sigfox
-
-Refer to 
-[https://github.com/UnaBiz/unabiz-arduino/wiki/Downlink](https://github.com/UnaBiz/unabiz-arduino/wiki/Downlink)
+This transmits an encoded message that looks like 920e5a00b051680194597b00.  The 12-byte encoded message contains the field names ctr, tmp, vlt as well as the field values.  To decode the message at the server side, refer to the next section.
 
 ## Decoding a structured message
 
@@ -202,6 +197,11 @@ At UnaBiz we call decodeMessage to decode the structured messages when tracing m
 <img src="https://storage.googleapis.com/unabiz-media/unabiz-arduino/decode-message-slack.jpg" height="300">
 
 The Structured Message Format is described below.
+
+## Getting the downlink response from Sigfox
+
+Refer to 
+[https://github.com/UnaBiz/unabiz-arduino/wiki/Downlink](https://github.com/UnaBiz/unabiz-arduino/wiki/Downlink)
 
 ## Checking messages sent by the UnaShield
 
