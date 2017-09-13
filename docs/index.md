@@ -107,7 +107,7 @@ If you're using UnaShield V1, change UnaShieldV2S to UnaShieldV1.
 
 Change COUNTRY_SG to your country code (e.g. COUNTRY_AU, COUNTRY_NZ). This sets the transceiver object to use the Sigfox frequencies for your country.
 
-useEmulator should always be set to false.
+useEmulator should always be set to false.  If you are connecting the UnaShield V2S to the SNEK emulator, set useEmulator to true.  **You will not be able to connect the UnaShield to the actual Sigfox network when useEmulator is set to true.**
 
 The following sections explain how to use the transceiver.sendMessage method to send a raw Sigfox message, and the Message class to send a structured message.
 
