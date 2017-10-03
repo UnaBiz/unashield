@@ -196,7 +196,19 @@ At UnaBiz we call decodeMessage to decode the structured messages when tracing m
 
 <img src="https://storage.googleapis.com/unabiz-media/unabiz-arduino/decode-message-slack.jpg" height="300">
 
-The Structured Message Format is described below.
+The Structured Message Format is described in the section "Format of structured message" below.
+
+## Sending a Sigfox Custom Payload message
+
+If you don't wish to use the above Structured Message Format and perform message decoding in your cloud, 
+you may use the Sigfox Custom Payload format to allow Sigfox to decode simple message formats and pass the decoded 
+fields in the Sigfox callback.  Note that each Sigfox Message Type is allowed to have only 1 Custom Payload format.
+
+Refer to these documents for details:
+
+[Create a callback in Sigfox backend using JSON](https://blog.sigfox.com/create-callback-sigfox-backend/)
+
+[Using UnaShield with Sigfox Custom Payload Format](https://docs.google.com/document/d/1WPNJYTWM1J8W_sXmU3XpQ4WVyYYpRMsoBrtvAF6D9OI/edit?usp=sharing)
 
 ## Getting the downlink response from Sigfox
 
@@ -237,7 +249,7 @@ The following Arduino sketches show how we may access the other sensors on the U
 
 * **Temperature, humidity, barometric pressure sensors:**
 
-  [https://github.com/UnaBiz/unabiz-arduino/tree/master/examples/temperature-sensor](https://github.com/UnaBiz/unabiz-arduino/tree/master/examples/temperature-sensor)
+  [https://github.com/UnaBiz/unabiz-arduino/tree/master/examples/send-altitude](https://github.com/UnaBiz/unabiz-arduino/tree/master/examples/send-altitude)
 
 * **Accelerometer sensor:**
 
