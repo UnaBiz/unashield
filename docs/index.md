@@ -249,6 +249,12 @@ The following Arduino sketches show how we may access the other sensors on the U
 
 * **Temperature, humidity, barometric pressure sensors:**
 
+  For sending sensor data in Structured Message Format:
+  
+  [https://github.com/UnaBiz/unabiz-arduino/tree/master/examples/send-altitude-structured](https://github.com/UnaBiz/unabiz-arduino/tree/master/examples/send-altitude-structured)
+
+  For sending sensor data in Sigfox Custom Payload Format:
+
   [https://github.com/UnaBiz/unabiz-arduino/tree/master/examples/send-altitude](https://github.com/UnaBiz/unabiz-arduino/tree/master/examples/send-altitude)
 
 * **Accelerometer sensor:**
