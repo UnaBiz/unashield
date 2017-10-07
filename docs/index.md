@@ -208,7 +208,7 @@ Refer to these documents for details:
 
 [Create a callback in Sigfox backend using JSON](https://blog.sigfox.com/create-callback-sigfox-backend/)
 
-[Using UnaShield with Sigfox Custom Payload Format](https://docs.google.com/document/d/1WPNJYTWM1J8W_sXmU3XpQ4WVyYYpRMsoBrtvAF6D9OI/edit?usp=sharing)
+[Getting Started with UnaShield and Sigfox on Ubidots](https://unabiz.github.io/unashield/ubidots)
 
 ## Getting the downlink response from Sigfox
 
