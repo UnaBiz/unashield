@@ -269,6 +269,10 @@ The following Arduino sketches show how we may access the other sensors on the U
 
   [https://github.com/UnaBiz/unabiz-arduino/tree/master/examples/grove-sensor](https://github.com/UnaBiz/unabiz-arduino/tree/master/examples/grove-sensor)
 
+* **Handling multiple sensors with a Finite State Machine**:
+
+  [https://github.com/UnaBiz/unabiz-arduino/blob/master/examples/multiple_inputs/multiple_inputs.ino](https://github.com/UnaBiz/unabiz-arduino/blob/master/examples/multiple_inputs/multiple_inputs.ino)
+
 ## Getting the Sigfox Device ID and PAC (Porting Authorization Code)
 
 When the above demo code runs, the Arduino Serial Monitor will show the Sigfox Device ID and PAC like this:
