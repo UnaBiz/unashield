@@ -78,7 +78,7 @@ Version v1.0
 
 -----
 
-<a href="https://raw.githubusercontent.com/UnaBiz/unashield/master/img/hardware/unashield-v2s-mar-2017.png"><kbd><img src="https://raw.githubusercontent.com/UnaBiz/unashield/master/img/hardware/unashield-v2s-mar-2017.png" width="800"></kbd></a><br>
+<a href="https://raw.githubusercontent.com/UnaBiz/unashield/master/img/hardware/unashield-v2s2.PNG"><kbd><img src="https://raw.githubusercontent.com/UnaBiz/unashield/master/img/hardware/unashield-v2s2.PNG" width="800"></kbd></a><br>
 
 **【UnaShield V2S2】20181109**
 
