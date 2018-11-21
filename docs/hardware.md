@@ -252,9 +252,10 @@ Select UnaShield V2S2 onboard G-Sensor interrupt signal from accelerometer inter
 
 **Jumper J205** - Select onboard G-Sensor Interrupt signal.
 
-|  | Floating | Magnet Interrupt | Accelerometer Interrupt |
-| :---------: | :---------: | :---------: | :---------: |
-| Jumper J205 | <img src="https://s3-ap-southeast-1.amazonaws.com/unafiles/unashield/hardware/J205.png" width="80"> | <img src="https://s3-ap-southeast-1.amazonaws.com/unafiles/unashield/hardware/select_mag.png" width="80"> | <img src="https://s3-ap-southeast-1.amazonaws.com/unafiles/unashield/hardware/select_acc.png" width="80"> |
+| **Jumper**	 | **Floating**	| **Magnet Interrupt** | **Accelerometer Interrupt** |
+| :------: | :-------------: | :---------: | :---------: | 
+| **J205**	 | <img src="https://s3-ap-southeast-1.amazonaws.com/unafiles/unashield/hardware/J205.png" width="80"> | <img src="https://s3-ap-southeast-1.amazonaws.com/unafiles/unashield/hardware/select_mag.png" width="80"> | <img src="https://s3-ap-southeast-1.amazonaws.com/unafiles/unashield/hardware/select_acc.png" width="80"> |
+
 
 -----
 ## Frequently Asked Questions
