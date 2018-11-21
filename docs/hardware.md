@@ -33,26 +33,27 @@ Version v1.0
 
 - **RCZ3:** Japan
 
-- **RCZ4:** Argentina, Australia, Colombia, Hong Kong, New Zealand, Singapore, Taiwan
+- **RCZ4:** Argentina, Australia, Colombia, Hong Kong, Malaysia, New Zealand, Singapore, Taiwan, Thailand
 {% endcapture %}
 {{ common_about_unashield }}
 
-| **Features** |  | **V1A (20161128)** | **V2 (20170325)** | **V2S (20170107)** | **V2S (20170325)** |					
-| :---------- | :---------- | :----------: | :----------: | :----------: | :----------: |					
-| **Sigfox Module** | **Radiocrafts RC1692HP-SIG** | **<span class="green">✔</span>** |  |  |  |					
-|  | **WISOL WSSFM10R** |  | **<span class="green">✔</span>** | **<span class="green">✔</span>** | **<span class="green">✔</span>** |					
-|  | **Sigfox RCZ** | **2 / 4** | **1 / 2 / 3 / 4** | **1 / 2 / 3 / 4** | **1 / 2 / 3 / 4** |					
-| **Sensor** | **Accelerometer (MMA8451Q)** |  |  | **<span class="green">✔</span>** | **<span class="green">✔</span>** |					
-|  | **Temperature Sensor (BME280)** |  |  | **<span class="green">✔</span>** | **<span class="green">✔</span>** |					
-|  | **Humidity Sensor (BME280)** |  |  | **<span class="green">✔</span>** | **<span class="green">✔</span>** |					
-|  | **Pressure Sensor (BME280)** |  |  | **<span class="green">✔</span>** | **<span class="green">✔</span>** |					
-|  | **Push Button** |  | **<span class="green">✔</span>** | **<span class="green">✔</span>** | **<span class="green">✔</span>** |					
-| **Peripheral Connection** | **Digital Grove (I2C)** |  | **<span class="green">✔</span>** | **<span class="green">✔</span>** | **<span class="green">✔</span>** |					
-|  | **Analog Grove** |  | **<span class="green">✔</span>** | **<span class="green">✔</span>** | **<span class="green">✔</span>** |					
-| **LED** | **Power Indication** | **<span class="green">✔</span>** | **<span class="green">✔</span>** | **<span class="green">✔</span>** | **<span class="green">✔</span>** |					
-|  | **General Indication** |  | **<span class="green">✔</span>** | **<span class="green">✔</span>** | **<span class="green">✔</span>** |					
-|  | **Module Status Monitor** |  | **<span class="green">✔</span>** | **<span class="green">✔</span>** | **<span class="green">✔</span>** |					
-| **Antenna** | **Matching Circuit** |  | **<span class="green">✔</span>** |  | **<span class="green">✔</span>** |					
+| **Features** |  | **V1A (20161128)** | **V2 (20170325)** | **V2S (20170107)** | **V2S (20170325)** | **V2S2 (20181109)** |						
+| :---------- | :---------- | :----------: | :----------: | :----------: | :----------: |	:----------: |					
+| **Sigfox Module** | **Radiocrafts RC1692HP-SIG** | **<span class="green">✔</span>** |  |  |  |  |					
+|  | **WISOL WSSFM10R** |  | **<span class="green">✔</span>** | **<span class="green">✔</span>** | **<span class="green">✔</span>** |	**<span class="green">✔</span>** |					
+|  | **Sigfox RCZ** | **2 / 4** | **1 / 2 / 3 / 4** | **1 / 2 / 3 / 4** | **1 / 2 / 3 / 4** |	**1 / 2 / 3 / 4** |					
+| **Sensor** | **Accelerometer (MMA8451Q)** |  |  | **<span class="green">✔</span>** | **<span class="green">✔</span>** |	|	
+|  | **Accelerometer (LSM303AGR)** |  |  | |  | **<span class="green">✔</span>**	|	
+|  | **Temperature Sensor (BME280)** |  |  | **<span class="green">✔</span>** | **<span class="green">✔</span>** | **<span class="green">✔</span>** |
+|  | **Humidity Sensor (BME280)** |  |  | **<span class="green">✔</span>** | **<span class="green">✔</span>** | **<span class="green">✔</span>** |
+|  | **Pressure Sensor (BME280)** |  |  | **<span class="green">✔</span>** | **<span class="green">✔</span>** | **<span class="green">✔</span>** |
+|  | **Push Button** |  | **<span class="green">✔</span>** | **<span class="green">✔</span>** | **<span class="green">✔</span>** | **<span class="green">✔</span>** |					
+| **Peripheral Connection** | **Digital Grove (I2C)** |  | **<span class="green">✔</span>** | **<span class="green">✔</span>** | **<span class="green">✔</span>** |	**<span class="green">✔</span>** |					
+|  | **Analog Grove** |  | **<span class="green">✔</span>** | **<span class="green">✔</span>** | **<span class="green">✔</span>** | **<span class="green">✔</span>** |						
+| **LED** | **Power Indication** | **<span class="green">✔</span>** | **<span class="green">✔</span>** | **<span class="green">✔</span>** | **<span class="green">✔</span>** | **<span class="green">✔</span>** |						
+|  | **General Indication** |  | **<span class="green">✔</span>** | **<span class="green">✔</span>** | **<span class="green">✔</span>** |	**<span class="green">✔</span>** |					
+|  | **Module Status Monitor** |  | **<span class="green">✔</span>** | **<span class="green">✔</span>** | **<span class="green">✔</span>** | **<span class="green">✔</span>** |			
+| **Antenna** | **Matching Circuit** |  | **<span class="green">✔</span>** |  | **<span class="green">✔</span>** | **<span class="green">✔</span>** |	
 
 ----- 
 ##  Schematics
@@ -77,9 +78,14 @@ Version v1.0
 
 -----
 
+<a href="https://raw.githubusercontent.com/UnaBiz/unashield/master/img/hardware/unashield-v2s-mar-2017.png"><kbd><img src="https://raw.githubusercontent.com/UnaBiz/unashield/master/img/hardware/unashield-v2s-mar-2017.png" width="800"></kbd></a><br>
+
+**【UnaShield V2S2】20181109**
+
+-----
 ##  Pin Assignment
 
-| **Arduino Pins** | **UnaShield V1A** | **UnaShield V2 / V2S** | **Description** |			
+| **Arduino Pins** | **UnaShield V1A** | **UnaShield V2 / V2S / V2S2** | **Description** |			
 | :----------: | :----------: | :----------: | :---------- |			
 | **Reserved** | **NC** | **NC** | **Reserved** |			
 | **IOREF** | **5V** | **5V** | **5V Power Source from Arduino platform** |			
@@ -109,8 +115,8 @@ Version v1.0
 | **D6** | **NC** | **Button** | **Push button；Push to low signal level** |			
 | **D5** | **UART-RX** | **UART-RX** | **UART receiving pin** |			
 | **D4** | **UART-TX** | **UART-TX** | **UART transmitting pin** |			
-| **D3** | **NC** | **INT2** | **Interrupt#2 of Bosch sensor (BME280)** |			
-| **D2** | **NC** | **INT1** | **Interrupt#1 of Bosch sensor (BME280)** |			
+| **D3** | **NC** | **INT2** | **Interrupt#2 of Accelerometer INT2 (V2S2: Select by J205)** |			
+| **D2** | **NC** | **INT1** | **Interrupt#1 of Accelerometer INT1** |			
 | **D1** | **NC** | **NC** | **Digital Pin-1** |			
 | **D0** | **NC** | **NC** | **Digital Pin-0** |			
  
@@ -142,7 +148,7 @@ To prevent damage to the onboard Sigfox module, *always connect the antenna befo
 
 UnaShield V1(A) embeds a Radiocrafts Sigfox module **RC1692HP-SIG,** certified for RCZ2 and RCZ4; UnaShield V2 / V2S uses a WISOL Sigfox module in the **WSSFM10R Series,** certified for all four RCZs. The Sigfox modules may be controlled via the **UART interface** with serial terminal commands (similar to the **AT Command Format** used by modems).
 
-**UnaShield V1A** | **UnaShield V2 / V2S**
+**UnaShield V1A** | **UnaShield V2 / V2S / V2S2**
 :---------------: | :---------------------:
 Radiocrafts RC1692HP-SIG | WISOL WSSFM10R
 For RCZ2 and 4 | For all RCZs: RCZ1, 2, 3 and 4
@@ -161,20 +167,21 @@ For the details of each Arduino Uno pin assignment and definition, please check 
 <a href="https://www.arduino.cc/en/Main/ArduinoBoardUno">https://www.arduino.cc/en/Main/ArduinoBoardUno</a>
 
 -----
-### 4. Push Button (UnaShield V2 / V2S only)
+### 4. Push Button (UnaShield V2 / V2S / V2S2 only)
 
 A **Push Button** (tact switch) is connected to the **D6 Digital Input** pin of the Arduino Uno.
 
 The button may be programmed in Arduino sketches to trigger certain functions when pressed.
 
 -----
-### 5. Grove Connector (UnaShield V2 / V2S only)
+### 5. Grove Connector (UnaShield V2 / V2S / V2S2 only)
 
 UnaShield V2S is equipped with **two Grove Connectors,** a standard 4-pin connector for Grove sensors. You may connect sensors or components with Grove interfaces to extend the capabilities of the Arduino device. 
 
 **Grove Connector #1：Connected to Arduino I2C Digital Interface (SCL and SDA)**
 
 **Grove Connector #2：Connected to Arduino Analog Input/Output interface (A2 and A3)**
+  * Note: Due to hardware design, UnaShield V2/V2S A2 and A3 pin cannot work as analog read pin.
 
 The onboard Grove connectors support two voltage levels: **3V3 or 5V.** Select the Grove voltage through jumper **J204**.
 
@@ -221,6 +228,13 @@ The **UnaShield accelerometer sensor** and **temperature / humidity / pressure s
 | **LOW**	 | **0x1C**	       | **<span class="green">✔</span>**       |
 | **HIGH**	| **0x1D**	       |             |
 
+#### **ST Accelerometer (G-Sensor) – LSM303AGR**
+
+| **Function** | **I2C Address**	| **Default** |
+| :------: | :-------------: | :---------: |
+| **Accelerometer**	 | **0x32**	| **<span class="green">✔</span>**|
+| **Magnet**	| **0x3C** |  **<span class="green">✔</span>** |
+
 #### **BOSCH Temperature / Humidity / Pressure Sensor – BME280**
 
 | **SD0**	 | **I2C Address**	| **Default** |
@@ -232,6 +246,14 @@ The **UnaShield accelerometer sensor** and **temperature / humidity / pressure s
 
 Grove Connector #1 is also connected to the I2C bus. The sensor or component connected through Grove Connector #1 must use an **I2C address that is distinct** from the above I2C addresses, to avoid address conflict. 
 
+### 8. INT selector (UnaShield V2S2 only)
+
+Select UnaShield V2S2 onboard G-Sensor interrupt signal from accelerometer interrupt 2 or magnet sensor interrupt.
+
+**Jumper J205** - Select onboard G-Sensor Interrupt signal.
+|  | Floating | Magnet Interrupt | Accelerometer Interrupt |
+| -------- | -------- | -------- | - |
+| Jumper J205 | ![](https://i.imgur.com/KmILhM7.png)| ![](https://i.imgur.com/BvZ659T.png)| ![](https://i.imgur.com/Zuz1nRM.png) |
 -----
 ## Frequently Asked Questions
 

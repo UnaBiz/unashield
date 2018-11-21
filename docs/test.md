@@ -31,7 +31,7 @@ Version v1.0
 
 - **RCZ3:** Japan
 
-- **RCZ4:** Argentina, Australia, Colombia, Hong Kong, New Zealand, Singapore, Taiwan
+- **RCZ4:** Argentina, Australia, Colombia, Hong Kong, Malaysia, New Zealand, Singapore, Taiwan, Thailand
 </span>
 
 | **Features** |  | **V1A (20161128)** | **V2 (20170325)** | **V2S (20170107)** | **V2S (20170325)** |					

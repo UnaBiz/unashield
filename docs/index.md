@@ -17,7 +17,8 @@ menus:
 
 - **RCZ4:** Argentina, Australia, Colombia, Hong Kong, Malaysia, New Zealand, Singapore, Taiwan, Thailand
 
-There are 2 versions of the UnaShield:
+There are 3 versions of the UnaShield:
+* **UnaShield V2S2:** Based on version UnaShield V2S2, swap onboard G-sensor from NXP MMA8451Q to ST LSM303AGR.
 
 * **UnaShield V2S:** Based on Sigfox module by WISOL.  Includes onboard sensors for temperature, humidity, air pressure, accelerometer and two ports for connecting Grove sensors.<br>
 
@@ -85,7 +86,7 @@ Refer to this sample Arduino sketch for sending Sigfox messages:
 **For UnaShield V1:**<br>
 <span style="font-size: smaller">[https://github.com/UnaBiz/unabiz-arduino/blob/master/examples/DemoTestUnaShieldV1/DemoTestUnaShieldV1.ino](https://github.com/UnaBiz/unabiz-arduino/blob/master/examples/DemoTestUnaShieldV1/DemoTestUnaShieldV1.ino)</span>
 
-**For UnaShieldV2S:**<br>
+**For UnaShieldV2S / UnaShield V2S2:**<br>
 <span style="font-size: smaller">[https://github.com/UnaBiz/unabiz-arduino/blob/master/examples/DemoTestUnaShieldV2S/DemoTestUnaShieldV2S.ino](https://github.com/UnaBiz/unabiz-arduino/blob/master/examples/DemoTestUnaShieldV2S/DemoTestUnaShieldV2S.ino)</span>
 
 The sample sketch may also be found in the Arduino integrated development environment by clicking **File** → **Examples** → **unabiz-arduino** or **unabiz-arduino-master**
@@ -257,7 +258,7 @@ The following Arduino sketches show how we may access the other sensors on the U
 
   [https://github.com/UnaBiz/unabiz-arduino/tree/master/examples/send-altitude](https://github.com/UnaBiz/unabiz-arduino/tree/master/examples/send-altitude)
 
-* **Accelerometer sensor:**
+* **Accelerometer sensor(UnaShield V2S):**
 
   [https://github.com/UnaBiz/unabiz-arduino/tree/master/examples/accelerometer-sensor](https://github.com/UnaBiz/unabiz-arduino/tree/master/examples/accelerometer-sensor)
 
