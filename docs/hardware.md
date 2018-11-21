@@ -251,8 +251,9 @@ Grove Connector #1 is also connected to the I2C bus. The sensor or component con
 Select UnaShield V2S2 onboard G-Sensor interrupt signal from accelerometer interrupt 2 or magnet sensor interrupt.
 
 **Jumper J205** - Select onboard G-Sensor Interrupt signal.
+
 |  | Floating | Magnet Interrupt | Accelerometer Interrupt |
-| -------- | -------- | -------- | - |
+| :---------: | :---------: | :---------: | :---------: |
 | Jumper J205 | ![](https://s3-ap-southeast-1.amazonaws.com/unafiles/unashield/hardware/J205.png)| ![](https://s3-ap-southeast-1.amazonaws.com/unafiles/unashield/hardware/select_mag.png)| ![](https://s3-ap-southeast-1.amazonaws.com/unafiles/unashield/hardware/select_acc.png) |
 -----
 ## Frequently Asked Questions
