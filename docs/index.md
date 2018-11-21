@@ -15,7 +15,7 @@ menus:
 
 - **RCZ3:** Japan
 
-- **RCZ4:** Argentina, Australia, Colombia, Hong Kong, New Zealand, Singapore, Taiwan
+- **RCZ4:** Argentina, Australia, Colombia, Hong Kong, Malaysia, New Zealand, Singapore, Taiwan, Thailand
 
 There are 2 versions of the UnaShield:
 
