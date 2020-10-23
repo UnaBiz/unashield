@@ -344,7 +344,7 @@ Follow the steps here to activate your UnaShield:
 
 <a href="https://bit.ly/unashieldact">https://bit.ly/unashieldact</a>
 
-Each UnaShield activated will enjoy two years of free Sigfox subscription.
+Each UnaShield activated will enjoy one year of free Sigfox subscription.
 
 ### *What is the warranty for UnaShield?*
 
